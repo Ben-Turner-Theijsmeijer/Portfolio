@@ -5,6 +5,11 @@
   --foreground: #171717;
   --nav-background: #161616;
   --nav-foreground: #e6e6e6;
+  --accent: #FFA737;
+  --accent1: #69b578;
+  --accent2: #3A7D44;
+  --accent3: #254D32;
+  --accent4: #181D27;
 }
 
 @theme inline {
