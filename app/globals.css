@@ -5,10 +5,10 @@
   --foreground: #171717;
   --nav-background: #161616;
   --nav-foreground: #e6e6e6;
-  --accent: #FFA737;
-  --accent1: #69b578;
-  --accent2: #3A7D44;
-  --accent3: #254D32;
+  --accent: #ea9c58;
+  --accent1: #b9f8cf;
+  --accent2: #6dc77b;
+  --accent3: #2c6e42;
   --accent4: #181D27;
 }
 
@@ -25,6 +25,11 @@
     --foreground: #ededed;
     --nav-background: #e6e6e6;
     --nav-foreground: #161616;
+    --accent: #FFA737;
+    --accent1: #69b578;
+    --accent2: #3A7D44;
+    --accent3: #254D32;
+    --accent4: #181D27;
   }
 }
 
@@ -35,9 +40,10 @@ body {
 }
 
 .header {
-  background-color: var(--nav-background);
+  background-color: var(--accent4);
   color: var(--nav-foreground);
   padding: 1vh 0;
+  box-shadow: 0px 2px 5px var(--accent2);
   
 }
 
@@ -48,4 +54,8 @@ body {
   text-align: center;
   position: relative;
   bottom: 0;
+}
+
+.stripe {
+  background-color: var(--accent1);
 }
