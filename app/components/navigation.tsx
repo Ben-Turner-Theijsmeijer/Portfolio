@@ -28,9 +28,9 @@ export const HeaderNav = () => {
 export const FooterNav = () => {
     return (
         <footer className="footer">
-          <div className="container">
+          <div className="">
             <p>
-              © <span className="year" /> Ben Turner-Theijsmeijer. All rights reserved. 
+              © {new Date().getFullYear()} Ben Turner-Theijsmeijer. All rights reserved. 
             </p>
             <a href="mailto:benturnertheijsmeijer@gmail.com">benturnertheijsmeijer@gmail.com</a>
           </div>

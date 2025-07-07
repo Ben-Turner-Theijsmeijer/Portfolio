@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #f3fbf9;
   --foreground: #171717;
   --nav-background: #161616;
   --nav-foreground: #e6e6e6;
@@ -43,7 +43,7 @@ body {
   background-color: var(--accent4);
   color: var(--nav-foreground);
   padding: 1vh 0;
-  box-shadow: 0px 2px 5px var(--accent2);
+  /* box-shadow: 0px 2px 5px var(--accent2); */
   
 }
 
