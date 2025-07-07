@@ -5,7 +5,7 @@ export const HeaderNav = () => {
     <header className="header">
         <div className="flex justify-between">
 
-            <div className="block justify-start pl-3">
+            <div className="block justify-start pl-3 z-10">
                 <Link href="/" className="mx-3">
                     Home
                 </Link>
