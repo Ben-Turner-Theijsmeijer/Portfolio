@@ -36,21 +36,13 @@ export default function AboutMe() {
                     delay: 0.2,
                 }}
                 className="Stripe">
-                    <div className="absolute p-0 md:p-5 w-screen md:-left-70 lg:-left-110 xl:-left-140 2xl:-left-155 rotate-282 accent3">
-                    </div>
-                    <div className="absolute p-0 md:p-5 w-screen md:-left-74 lg:-left-114 xl:-left-144 2xl:-left-159 rotate-282 accent1">
-                    </div>
-                    <div className="absolute p-0 md:p-10 lg:p-20 xl:p-25 w-screen md:-left-45 lg:-left-75 xl:-left-95 2xl:-left-110 rotate-282 accent3">
-                    </div>
-                    <div className="absolute p-0 md:p-10 lg:p-20 xl:p-25 w-screen md:-left-50 lg:-left-80 xl:-left-105 2xl:-left-120 rotate-282 accent2">
-                    </div>
                 </motion.div> */}
 
-                <div className="Stripe absolute inset-0 flex justify-center items-center max-md:hidden">
-                    <div className="absolute rotate-[192deg] accent3 h-500 w-1/15 translate-y-[-18%]" />
-                    <div className="absolute rotate-[192deg] accent1 h-500 w-1/15 translate-y-[-23%]" />
-                    <div className="absolute rotate-[192deg] accent3 h-500 w-2/5 translate-y-[25%]" />
-                    <div className="absolute rotate-[192deg] accent2 h-500 w-2/5 translate-y-[20%]" />
+                <div className="Stripe absolute inset-0 flex justify-center items-center">
+                    <div className="absolute rotate-[260deg] md:rotate-[12deg] accent3 h-500 w-1/15 translate-y-[-3.5%] md:translate-y-[-18%]" />
+                    <div className="absolute rotate-[260deg] md:rotate-[12deg] accent1 h-500 w-1/15 translate-y-[-4%] md:translate-y-[-23%]" />
+                    <div className="absolute rotate-[260deg] md:rotate-[12deg] accent3 h-500 w-2/5 translate-y-[2%] md:translate-y-[25%]" />
+                    <div className="absolute rotate-[260deg] md:rotate-[12deg] accent2 h-500 w-2/5 translate-y-[1%] md:translate-y-[20%]" />
                 </div>
 
 
