@@ -23,34 +23,45 @@ export default function AboutMe() {
                 </div>
             </div>
 
-            <motion.div 
-                initial={{ opacity: 0, x:50 }}
+            <div className="md:w-2/5 flex justify-center mt-8 md:mt-0 relative">
+                    
+                {/* <motion.div 
+                initial={{ opacity: 0, x:70 }}
                 animate={{ opacity: 1, x:0 }}
                 transition={{
                     duration: 0.8,
                     type: "spring",
                     stiffness: 100,
-                    damping: 10, // bounce control
+                    damping: 10,
                     delay: 0.2,
                 }}
-                className="md:w-2/5 flex justify-center mt-8 md:mt-0 relative">
-                    
-                <div className="absolute p-0 md:p-5 w-screen md:-left-70 lg:-left-110 xl:-left-140 2xl:-left-160 rotate-282 accent3">
+                className="Stripe">
+                    <div className="absolute p-0 md:p-5 w-screen md:-left-70 lg:-left-110 xl:-left-140 2xl:-left-155 rotate-282 accent3">
+                    </div>
+                    <div className="absolute p-0 md:p-5 w-screen md:-left-74 lg:-left-114 xl:-left-144 2xl:-left-159 rotate-282 accent1">
+                    </div>
+                    <div className="absolute p-0 md:p-10 lg:p-20 xl:p-25 w-screen md:-left-45 lg:-left-75 xl:-left-95 2xl:-left-110 rotate-282 accent3">
+                    </div>
+                    <div className="absolute p-0 md:p-10 lg:p-20 xl:p-25 w-screen md:-left-50 lg:-left-80 xl:-left-105 2xl:-left-120 rotate-282 accent2">
+                    </div>
+                </motion.div> */}
+
+                <div className="Stripe absolute inset-0 flex justify-center items-center max-md:hidden">
+                    <div className="absolute rotate-[192deg] accent3 h-500 w-1/15 translate-y-[-18%]" />
+                    <div className="absolute rotate-[192deg] accent1 h-500 w-1/15 translate-y-[-23%]" />
+                    <div className="absolute rotate-[192deg] accent3 h-500 w-2/5 translate-y-[25%]" />
+                    <div className="absolute rotate-[192deg] accent2 h-500 w-2/5 translate-y-[20%]" />
                 </div>
-                <div className="absolute p-0 md:p-5 w-screen md:-left-74 lg:-left-114 xl:-left-144 2xl:-left-164 rotate-282 accent1">
-                </div>
-                <div className="absolute p-0 md:p-10 lg:p-20 xl:p-25 w-screen md:-left-45 lg:-left-75 xl:-left-95 2xl:-left-115 rotate-282 accent3">
-                </div>
-                <div className="absolute p-0 md:p-10 lg:p-20 xl:p-25 w-screen md:-left-50 lg:-left-80 xl:-left-105 2xl:-left-125 rotate-282 accent2">
-                </div>
-                <div className="relative w-70 h-70 rounded-full overflow-hidden border-r-8 border-b-8 black shadow-lg">
+
+
+                <div className="relative w-60 h-60 sm:w-70 sm:h-70 rounded-full overflow-hidden border-r-8 border-b-8 black shadow-lg">
                 <img
                     src="images/Ben PFP.jpg"
                     alt="Ben"
                     className="w-full h-full object-cover"
                 />
                 </div>
-            </motion.div>            
+            </div>            
         </div>
     );  
 }
