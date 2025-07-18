@@ -10,6 +10,7 @@
   --accent2: #6dc77b;
   --accent3: #2c6e42;
   --accent4: #181D27;
+  --accent5: #674629;
 }
 
 @theme inline {
@@ -30,6 +31,7 @@
     --accent2: #3A7D44;
     --accent3: #254D32;
     --accent4: #181D27;
+    --accent5: #674629;
   }
 }
 
@@ -56,23 +58,35 @@ body {
   bottom: 0;
 }
 
-.accent1 {
+.bg-O1 {
+  background-color: var(--accent);
+}
+
+.accent-O1 {  
+  color: var(--accent);
+}
+
+.accent-O2{
+  color: var(--accent5);
+}
+
+.accent-G1 {
   background-color: var(--accent1);
+  color: var(--accent1);
 }
 
-.accent2 {
+.accent-G2 {
   background-color: var(--accent2);
+  color: var(--accent2);
 }
 
-.accent3 {
+.accent-G3 {
   background-color: var(--accent3);
+  color: var(--accent3);
 }
 
-.accent4 {
+.accent-G4 {
   background-color: var(--accent4);
-}
-
-.accent5 {
-  background-color: var(--accent5);
+  color: var(--accent4);
 }
 
