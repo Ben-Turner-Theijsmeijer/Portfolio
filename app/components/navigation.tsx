@@ -2,12 +2,12 @@ import Link from "next/link";
 
 export const HeaderNav = () => {
  return (
-    <header className="header">
-        <div className="flex justify-between w-full max-w-[1600px] mx-auto">
-
-            <div className="block justify-start pl-3 z-10">
-                <Link href="/" className="mx-3">
-                Home
+    <header className="">
+        <div className="abosolute top-0 h-[40px] w-screen bg-[var(--nav-background)]"></div>
+        <div className="header flex fixed top-0 z-10 justify-between w-full mx-auto bg-[var(--accent6)]/85">
+            <div className="block justify-start pl-3">
+                <Link href="/" className="font-bold text-xl mx-3">
+                &lt; B.T.T / &gt;
                 </Link>
             </div>
 
@@ -16,7 +16,10 @@ export const HeaderNav = () => {
                     About
                 </Link>
                 <Link href="/experience" className="mx-3">
-                    Work Experience
+                    Experience
+                </Link>
+                <Link href="/experience" className="mx-3">
+                    Projects
                 </Link>
             </div>
         </div>

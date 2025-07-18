@@ -44,11 +44,9 @@ body {
 }
 
 .header {
-  background-color: var(--nav-background);
   color: var(--nav-foreground);
+  height: 40px;
   padding: 1vh 0;
-  /* box-shadow: 0px 2px 5px var(--accent2); */
-  
 }
 
 .footer {
@@ -64,10 +62,9 @@ body {
   fill: var(--accent5);
   height: 4vh;
   width: 4vh;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-  margin-left: 1.5vh;
-  margin-right: 1.5vh;
+  max-height: 40px;
+  max-width: 40px;
+  margin: 1vh 1.5vh; 
   transition-duration: 0.3s;
 }
 
