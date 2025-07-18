@@ -3,11 +3,11 @@ import Link from "next/link";
 export const HeaderNav = () => {
  return (
     <header className="header">
-        <div className="flex justify-between">
+        <div className="flex justify-between w-full max-w-[1600px] mx-auto">
 
             <div className="block justify-start pl-3 z-10">
                 <Link href="/" className="mx-3">
-                    Home
+                Home
                 </Link>
             </div>
 
