@@ -126,9 +126,20 @@ export default function AboutMe() {
                     </div>
                 </div>  
             </div>
-            <div className=" w-auto bg-[var(--accent4)] h-2">
-            
+            <div className=" w-auto bg-[var(--accent4)] h-2" />
+            <div className=" w-auto bg-[var(--accent5)] h-2" />
+
+            <div className="w-7/8 h-auto">
+
             </div>
+
+            <div className="w-7/8 h-auto bg-[var(--accent4)]">
+
+            </div>
+            <div className="w-7/8  h-auto bg-[var(--accent5)]">
+
+            </div>
+            
             <div className="h-100">
 
             </div>
