@@ -1,6 +1,8 @@
+import { ComingSoon } from "./../components/comingSoon";
+
 export default function experience() {
     return (
-        <h1>HELLLOOOOOO</h1>
+        <ComingSoon />
     );
 }
 // build cards for each project that can be clicked on to take you to the actual site, use the react multi item feature

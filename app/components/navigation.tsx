@@ -6,7 +6,7 @@ export const HeaderNav = () => {
         <div className="abosolute top-0 h-[40px] w-screen bg-[var(--nav-background)]"></div>
         <div className="header flex fixed top-0 z-10 justify-between w-full mx-auto bg-[var(--accent6)]/85">
             <div className="block justify-start pl-3">
-                <Link href="/" className="font-bold text-xl mx-3">
+                <Link href="/about" className="font-bold text-xl mx-3">
                 &lt; B.T.T / &gt;
                 </Link>
             </div>
@@ -18,7 +18,7 @@ export const HeaderNav = () => {
                 <Link href="/experience" className="mx-3">
                     Experience
                 </Link>
-                <Link href="/experience" className="mx-3">
+                <Link href="/projects" className="mx-3">
                     Projects
                 </Link>
             </div>

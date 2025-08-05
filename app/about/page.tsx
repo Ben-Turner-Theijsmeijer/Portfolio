@@ -129,16 +129,23 @@ export default function AboutMe() {
             <div className=" w-auto bg-[var(--accent4)] h-2" />
             <div className=" w-auto bg-[var(--accent5)] h-2" />
 
-            <div className="w-7/8 h-auto">
+            <div className="w-full h-auto flex justify-center">
+                <div className="m-10 p-10 max-w-6/8 flex-1 bg-[var(--accent2)]">
+                    <div className="m-10 w-7/8 project h-80 bg-[var(--background)]">
 
+                    </div>
+                    <div className="m-10 w-7/8 project h-80 bg-[var(--background)]">
+
+                    </div>
+                </div>
             </div>
-
+{/* 
             <div className="w-7/8 h-auto bg-[var(--accent4)]">
 
             </div>
             <div className="w-7/8  h-auto bg-[var(--accent5)]">
 
-            </div>
+            </div> */}
             
             <div className="h-100">
 
