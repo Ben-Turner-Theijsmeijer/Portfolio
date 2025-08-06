@@ -59,7 +59,7 @@ export default function AboutMe() {
                                 damping: 10,
                                 delay: 0.4,
                             }} />
-                        <motion.div className="absolute rotate-[260deg] md:rotate-[12deg] bg-[var(--accent4)] h-500 w-1/15 translate-y-[-4%] md:translate-y-[-23%]"
+                        <motion.div className="absolute rotate-[260deg] md:rotate-[12deg] bg-[var(--accent3)] h-500 w-1/15 translate-y-[-4%] md:translate-y-[-23%]"
                             variants={stripeVariants}
                             initial="hidden"
                             animate="visible"

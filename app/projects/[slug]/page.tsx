@@ -1,5 +1,7 @@
 import projectData from "@/data/personalProjects.json";
 import { notFound } from "next/navigation";
+import { use } from 'react'
+
 
 type Params = {
   slug: string;
@@ -12,8 +14,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ProjectPage({ params }: { params: Params }) {
-  const project = projectData.find((p) => p.slug === params.slug);
+export default function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = use(params)
+  const project = projectData.find((p) => p.slug === slug);
 
   if (!project) {
     notFound();
