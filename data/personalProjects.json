@@ -1,0 +1,14 @@
+[
+  {
+    "title": "TEMP DATA - Game Engine",
+    "slug": "game-engine-clone",
+    "description": "TEMP DATA - A lightweight 3D engine built with WebGL.",
+    "content": "TEMP DATA - This is a 3D game engine I built from scratch using WebGL and Three.js. It features a custom rendering loop, basic physics, and asset loading."
+  },
+  {
+    "title": "TEMP DATA - Art Portfolio Generator",
+    "slug": "art-portfolio-generator",
+    "description": "TEMP DATA - A tool to auto-generate art portfolios using GPT and image uploads.",
+    "content": "TEMP DATA - This tool lets users upload artwork and generate descriptions and layout suggestions using GPT-4. Built with Next.js and Tailwind."
+  }
+]
