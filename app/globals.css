@@ -2,6 +2,7 @@
 
 :root {
   --background: #f0f5ef;
+  --midground: #dde4df;
   --foreground: #171717;
   --nav-background: #161616;
   --nav-foreground: #e6e6e6;
@@ -24,6 +25,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
+    --midground: #ceddd3;
     --foreground: #ededed;
     --nav-background: #e6e6e6;
     --nav-foreground: #161616;

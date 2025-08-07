@@ -8,7 +8,7 @@ export default function AboutMe() {
             {/* Hero Section */}
             <div className="py-25 lg:px-15 xl:px-25 flex flex-col md:flex-row items-center justify-around -z-5 p-8 overflow-hidden">
                 <div className="md:w-3/5">
-                    <h1 className="text-5xl sm:text-6xl font-bold mb-2">Hi, I’m <span className="text-[var(--accent3)] hover:text-[var(--accent4)] duration-700">Ben Turner-Theijsmeijer</span></h1>
+                    <h1 className="text-5xl sm:text-6xl font-bold mb-2 duration-700">Hi, I’m <span className="text-[var(--accent3)] hover:text-[var(--accent4)]">Ben Turner-Theijsmeijer</span></h1>
                     <h2 className="text-2xl sm:text-3xl text-gray-400 mb-4">Creator, Artist, Software Developer</h2>
                     <p className="text-base sm:text-lg mb-4 text-gray-700">
                         I am a recent graduate from the University of Guelph with a bachelor's degree
@@ -127,23 +127,48 @@ export default function AboutMe() {
                 </div>  
             </div>
 
-            {/* separator */}
+            {/* hero body separator */}
             <div className=" w-auto bg-[var(--accent4)] h-2" />
             <div className=" w-auto bg-[var(--accent5)] h-2" />
 
             {/* Projects */}
             <div className="w-full h-auto flex justify-center">
-                <div className="m-10 p-10 max-w-3/4 flex flex-1 bg-[var(--accent2)] justify-center">
-                    <div className="grid grid-cols-2 m-10 w-3/4 project h-[50vh] bg-[var(--background)] border-2 border-[var(--accent4)]">
-                            <div>
-                                
-                            </div>
-                            <div>
-                                <h2>HELLO</h2>
-                                <h4>this is the description</h4>
-                            </div>
+                <div className="mt-25 p-10 w-[60%] min-w-[400px] flex justify-center bg-[var(--accent3)] z-5">
+                    <div className="relative w-[100%] flex justify-center group">
+
+                        <div className="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 m-[1vh] w-[90%] project h-[40vh] bg-[var(--midground)] border-3 border-[var(--accent5)] ease-out duration-200 group-hover:-translate-x-1 group-hover:-translate-y-1 z-6">
+                                <div className="grid place-items-center">
+                                <img className="" src="images/Camis_Logo.webp" alt="" />
+                                </div>  
+                                <div className="p-10">
+                                    <h2 className="text-2xl sm:text-3xl text-gray-400">Heading</h2>
+                                    <p className="text-base sm:text-lg mb-4 text-gray-700">Subheading</p>
+                                    <p className="text-base sm:text-lg mb-4 text-gray-700">Short Description</p>
+                                </div>
+                        </div>
+                        <div className="absolute m-[1vh] w-[90%] h-[40vh] bg-[var(--accent5)] ease-out duration-200 group-hover:translate-x-2 group-hover:translate-y-2"/>
                     </div>
                 </div>
+                <motion.div className="absolute mt-25 w-[60%] min-w-[400px] h-[53vh] bg-[var(--accent5)]"
+                    initial={{rotate: 0}}
+                    whileInView={{rotate: 6}}
+                    viewport={{ amount: 0.8 }}
+                    transition={{
+                        type: "spring",
+                        bounce: 0.4,
+                        duration: 0.8,
+                    }} 
+                />
+                <motion.div className="absolute mt-25 w-[60%] min-w-[400px] h-[53vh] bg-[var(--accent4)]"
+                    initial={{rotate: 0}}
+                    whileInView={{rotate: 3}}
+                    viewport={{ amount: 0.8 }}
+                    transition={{
+                        type: "spring",
+                        bounce: 0.4,
+                        duration: 0.6,
+                    }}
+                />
             </div>
             
             <div className="h-100">
