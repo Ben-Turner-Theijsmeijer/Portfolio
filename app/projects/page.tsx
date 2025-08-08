@@ -1,10 +1,8 @@
-import { ComingSoon } from "../components/comingSoon";
 import Link from "next/link";
 import projectData from "@/data/personalProjects.json";
 
 export default function projects() {
     return (
-        // <ComingSoon />
         <div>
             <h1 className="text-4xl font-bold mb-6">My Projects</h1>
             <ul className="space-y-4">

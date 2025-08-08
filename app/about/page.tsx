@@ -8,7 +8,7 @@ export default function AboutMe() {
             {/* Hero Section */}
             <div className="py-25 lg:px-15 xl:px-25 flex flex-col md:flex-row items-center justify-around -z-5 p-8 overflow-hidden">
                 <div className="md:w-3/5">
-                    <h1 className="text-5xl sm:text-6xl font-bold mb-2 duration-700">Hi, I’m <span className="text-[var(--accent3)] hover:text-[var(--accent4)]">Ben Turner-Theijsmeijer</span></h1>
+                    <h1 className="text-5xl sm:text-6xl font-bold mb-2 duration-700">Hi, I’m <span className="duration-700 text-[var(--accent3)] hover:text-[var(--accent4)]">Ben Turner-Theijsmeijer</span></h1>
                     <h2 className="text-2xl sm:text-3xl text-gray-400 mb-4">Creator, Artist, Software Developer</h2>
                     <p className="text-base sm:text-lg mb-4 text-gray-700">
                         I am a recent graduate from the University of Guelph with a bachelor's degree
@@ -131,25 +131,31 @@ export default function AboutMe() {
             <div className=" w-auto bg-[var(--accent4)] h-2" />
             <div className=" w-auto bg-[var(--accent5)] h-2" />
 
-            {/* Projects */}
+            {/* Work Experience Section */}
             <div className="w-full h-auto flex justify-center">
-                <div className="mt-25 p-10 w-[60%] min-w-[400px] flex justify-center bg-[var(--accent3)] z-5">
+                <div className="mt-25 p-10 w-[60%] min-w-[400px] grid justify-center bg-[var(--accent3)] z-5">
+                    <h1 className="text-4xl sm:text-5xl font-bold mb-2 duration-700">My Experience</h1>
+                    {/* Job */}
                     <div className="relative w-[100%] flex justify-center group">
-
-                        <div className="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 m-[1vh] w-[90%] project h-[40vh] bg-[var(--midground)] border-3 border-[var(--accent5)] ease-out duration-200 group-hover:-translate-x-1 group-hover:-translate-y-1 z-6">
-                                <div className="grid place-items-center">
-                                <img className="" src="images/Camis_Logo.webp" alt="" />
-                                </div>  
-                                <div className="p-10">
-                                    <h2 className="text-2xl sm:text-3xl text-gray-400">Heading</h2>
-                                    <p className="text-base sm:text-lg mb-4 text-gray-700">Subheading</p>
-                                    <p className="text-base sm:text-lg mb-4 text-gray-700">Short Description</p>
-                                </div>
+                        <div className="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 m-[1vh] w-[90%] work-experience h-[40vh] bg-[var(--midground)] border-3 border-[var(--accent5)] overflow-hidden ease-out duration-200 group-hover:bg-[var(--background)] group-hover:-translate-x-1 group-hover:-translate-y-1 z-6">
+                            {/* Company Logo */}
+                            <div className="grid place-items-center">
+                                <img className="p-5" src="images/Camis_Logo.png" alt="Camis Inc Logo" />
+                            </div>  
+                            {/* Description */}
+                            <div className="relative p-5 min-h-[300px]">
+                                <div className="absolute max-md:hidden top-1/2 left-1 -translate-x-1/2 -translate-y-1/2 h-[50%] w-px bg-linear-to-b group-hover:from-[var(--background)] from-[var(--midground)] via-gray-600 group-hover:to-[var(--background)] to-[var(--midground)] z-10" />
+                                <h2 className="text-2xl sm:text-4xl font-bold text-[var(--accent6)] text-shadow-sm">Camis Inc</h2>
+                                <h3 className="text-base sm:text-lg text-gray-700  text-shadow-xs">Data Developer Co-Op</h3>
+                                <p className="text-base/6 my-4 text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            </div>
                         </div>
                         <div className="absolute m-[1vh] w-[90%] h-[40vh] bg-[var(--accent5)] ease-out duration-200 group-hover:translate-x-2 group-hover:translate-y-2"/>
                     </div>
                 </div>
-                <motion.div className="absolute mt-25 w-[60%] min-w-[400px] h-[53vh] bg-[var(--accent5)]"
+
+                {/* Work Experience BG Divs */}
+                <motion.div className="absolute mt-25 w-[60%] min-w-[400px] h-[60vh] bg-[var(--accent5)]"
                     initial={{rotate: 0}}
                     whileInView={{rotate: 6}}
                     viewport={{ amount: 0.8 }}
@@ -159,7 +165,7 @@ export default function AboutMe() {
                         duration: 0.8,
                     }} 
                 />
-                <motion.div className="absolute mt-25 w-[60%] min-w-[400px] h-[53vh] bg-[var(--accent4)]"
+                <motion.div className="absolute mt-25 w-[60%] min-w-[400px] h-[60vh] bg-[var(--accent4)]"
                     initial={{rotate: 0}}
                     whileInView={{rotate: 3}}
                     viewport={{ amount: 0.8 }}
