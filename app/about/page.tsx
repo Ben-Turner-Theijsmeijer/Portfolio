@@ -151,7 +151,7 @@ export default function AboutMe() {
                                 <h2 className="text-2xl sm:text-4xl font-bold text-[var(--accent6)] text-shadow-sm">Camis Inc</h2>
                                 <h3 className="text-base sm:text-lg text-gray-700  text-shadow-xs">Data Developer Co-Op</h3>
                                 <div className="max-md:text-right overflow-y-auto h-[70%] pr-2">
-                                    <p className="text-base/6 max-md:hidden mt-4 text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                    <p className="text-base/6 max-md:hidden mt-4 text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
                                     <p className="text-base/6 md:hidden mt-4 text-gray-700">Learn More  &gt; </p>
                                 </div>
                             </div>
