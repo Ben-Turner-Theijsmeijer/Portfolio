@@ -1,5 +1,6 @@
 import { MapPin } from "lucide-react";
 import * as motion from "motion/react-client"
+import { JobCards } from "../components/jobCards";
 
 export default function AboutMe() {
   
@@ -118,11 +119,11 @@ export default function AboutMe() {
 
                     {/* Portrait Section */}
                     <div className="relative size-60 sm:size-65 md:size-70 rounded-full overflow-hidden border-r-8 border-b-8 black shadow-lg">
-                    <img
-                        src="images/Ben PFP.jpg"
-                        alt="Ben"
-                        className="w-full h-full object-cover"
-                    />
+                        <img
+                            src="images/Ben_PFP.jpg"
+                            alt="Ben"
+                            className="w-full h-full object-cover"
+                        />
                     </div>
                 </div>  
             </div>
@@ -135,35 +136,21 @@ export default function AboutMe() {
 
             {/* Work Experience Section */}
             <div className="w-full h-auto flex justify-center bg-[var(--midground)]">
-                <div className="mt-25 p-10 w-[60%] min-w-[400px] grid justify-center bg-[var(--accent3)] z-5">
+                <div className="my-25 p-10 w-[60%] min-w-[400px] grid justify-center bg-[var(--accent3)] z-5">
                     <div className="text-center">
                         <h1 className="text-4xl sm:text-5xl font-bold duration-700">Experience</h1>
                         <p className="text-base sm:text-lg font-extralight mb-2 duration-700">Software Development & IT</p>
                     </div>
-                    {/* Job */}
-                    <div className="relative w-[100%] flex justify-center group">
-                        <div className="grid md:grid-cols-2 md:grid-rows-1 grid-rows-[auto_auto] m-[1vh] w-[90%] work-experience h-[330px] sm:h-[400px] md:h-[265px] bg-[var(--midground)] border-3 border-[var(--accent5)] ease-out duration-200 group-hover:bg-[var(--background)] group-hover:-translate-x-1 group-hover:-translate-y-1 z-6">
-                            {/* Company Logo */}
-                            <div className="grid place-items-center">
-                                <img className="p-5" src="images/Camis_Logo.png" alt="Camis Inc Logo" />
-                            </div>  
-                            {/* Description */}
-                            <div className="relative py-0 px-5 md:p-5 overflow-hidden">
-                                <div className="absolute max-md:hidden top-1/2 left-1 -translate-x-1/2 -translate-y-1/2 h-[50%] w-px bg-linear-to-b group-hover:from-[var(--background)] from-[var(--midground)] via-[var(--accent)] group-hover:to-[var(--background)] to-[var(--midground)] z-10" />
-                                <h2 className="text-2xl sm:text-4xl font-bold text-[var(--accent6)] text-shadow-sm">Camis Inc</h2>
-                                <h3 className="text-base sm:text-lg text-gray-700  text-shadow-xs">Data Developer Co-Op</h3>
-                                <div className="max-md:text-right overflow-y-auto h-[70%] pr-2">
-                                    <p className="text-base/6 max-md:hidden mt-4 text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
-                                    <p className="text-base/6 md:hidden mt-4 text-gray-700">Learn More  &gt; </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="absolute m-[1vh] w-[90%] h-[330px] sm:h-[400px] md:h-[265px] bg-[var(--accent5)] ease-out duration-200 group-hover:translate-x-2 group-hover:translate-y-2"/>
+                    {/* Jobs */}
+                    <JobCards />
+
+                    <div className="text-center mt-5">
+                            <h2 className="text-2xl sm:text-3xl font-light duration-700">Go &gt;</h2>
                     </div>
                 </div>
 
                 {/* Work Experience BG Divs */}
-                <motion.div className="absolute mt-25 w-[60%] min-w-[400px] h-[60vh] bg-[var(--accent5)]"
+                <motion.div className="absolute mt-25 p-10 w-[60%] min-w-[400px] sm:h-[400px] md:h-[780px] bg-[var(--accent5)]"
                     initial={{rotate: 0}}
                     whileInView={{rotate: 6}}
                     viewport={{ amount: 0.8 }}
@@ -173,7 +160,7 @@ export default function AboutMe() {
                         duration: 0.8,
                     }} 
                 />
-                <motion.div className="absolute mt-25 w-[60%] min-w-[400px] h-[60vh] bg-[var(--accent4)]"
+                <motion.div className="absolute mt-25 p-10 w-[60%] min-w-[400px] sm:h-[400px] md:h-[780px] bg-[var(--accent4)]"
                     initial={{rotate: 0}}
                     whileInView={{rotate: 3}}
                     viewport={{ amount: 0.8 }}
@@ -186,7 +173,6 @@ export default function AboutMe() {
             </div>
             
             <div className="h-100">
-
             </div>
         </div>
 

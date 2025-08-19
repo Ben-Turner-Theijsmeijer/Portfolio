@@ -18,12 +18,14 @@ export default function ExperiencePage ({ params }: { params: Promise<{ slug: st
     }
 
     return (
-        <div className="w-full max-w-[1600px] mx-auto">
-            <h1 className="text-4xl font-bold mb-4">{experience["article title"]}</h1>
-            <p className="text-gray-700">{experience.company}</p>
-            <p className="text-gray-600">{experience["job title"]}</p>
-            <p className="text-gray-500">{experience["job desctiption"]}</p>
-            <p className="text-gray-500 whitespace-pre-line">{experience.introduction}</p>
+        <div>
+            <div className="w-full max-w-[1600px] mx-auto">
+                <h1 className="text-4xl font-bold mb-4">{experience.articleTitle}</h1>
+                <p className="text-gray-700">{experience.company}</p>
+                <p className="text-gray-600">{experience.jobTitle}</p>
+                <p className="text-gray-500">{experience.jobDesctiption}</p>
+                <p className="text-gray-500 whitespace-pre-line">{experience.introduction}</p>
+            </div>
         </div>
     );
 }

@@ -18,9 +18,11 @@ export default function ProjectPage({ params }: { params: Promise<{ slug: string
     }
 
     return (
-        <div className="w-full max-w-[1600px] mx-auto">
-            <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
-            <p className="text-gray-700">{project.content}</p>
+        <div>
+            <div className="w-full max-w-[1600px] mx-auto">
+                <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
+                <p className="text-gray-700">{project.content}</p>
+            </div>
         </div>
     );
 }
