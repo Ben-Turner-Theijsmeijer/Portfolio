@@ -1,9 +1,10 @@
 import Link from "next/link";
 import projectData from "@/data/personalProjects.json";
+import { ComingSoon } from "../components/comingSoon";
 
 export default function projects() {
     return (
-        <div>
+        <div className="w-full max-w-[1600px] mx-auto">
             <h1 className="text-4xl font-bold mb-6">My Projects</h1>
             <ul className="space-y-4">
                 {projectData.map((project) => (
@@ -15,6 +16,7 @@ export default function projects() {
                 </li>
                 ))}
             </ul>
+            <ComingSoon />
         </div>
         
     );

@@ -128,11 +128,13 @@ export default function AboutMe() {
             </div>
 
             {/* hero body separator */}
-            <div className=" w-auto bg-[var(--accent4)] h-2" />
-            <div className=" w-auto bg-[var(--accent5)] h-2" />
+            <div className="grid grid-row-2">
+                <div className="w-auto bg-[var(--accent4)] justify-center h-2" />
+                <div className="w-auto bg-[var(--accent5)] justify-center h-2" />
+            </div>
 
             {/* Work Experience Section */}
-            <div className="w-full h-auto flex justify-center">
+            <div className="w-full h-auto flex justify-center bg-[var(--midground)]">
                 <div className="mt-25 p-10 w-[60%] min-w-[400px] grid justify-center bg-[var(--accent3)] z-5">
                     <div className="text-center">
                         <h1 className="text-4xl sm:text-5xl font-bold duration-700">Experience</h1>
