@@ -1,6 +1,7 @@
 import { MapPin } from "lucide-react";
 import * as motion from "motion/react-client"
 import { JobCards } from "../components/jobCards";
+import Link from "next/link";
 
 export default function AboutMe() {
   
@@ -141,11 +142,14 @@ export default function AboutMe() {
                         <h1 className="text-4xl sm:text-5xl font-bold duration-700">Experience</h1>
                         <p className="text-base sm:text-lg font-extralight mb-2 duration-700">Software Development & IT</p>
                     </div>
-                    {/* Jobs */}
+
+                    {/* Display for three most recent Jobs from the experience JSON */}
                     <JobCards />
 
                     <div className="text-center mt-5">
-                            <h2 className="text-2xl sm:text-3xl font-light duration-700">Go &gt;</h2>
+                        <Link href="/experience" className="duration-200 text-[var(--foreground)] hover:text-[var(--accent2)]">
+                            <h2 className="text-2xl sm:text-3xl font-light">See More 🢂</h2>
+                        </Link>
                     </div>
                 </div>
 
