@@ -10,8 +10,8 @@ export const JobCards = () => {
                 <div key={workExperience.slug} className="relative w-[100%] flex justify-center group">
                     <div className="grid md:grid-cols-2 md:grid-rows-1 grid-rows-[auto_auto] m-[1vh] w-[90%] work-experience h-[330px] sm:h-[400px] md:h-[265px] bg-[var(--midground)] border-3 border-[var(--accent5)] ease-out duration-200 group-hover:bg-[var(--background)] group-hover:-translate-x-1 group-hover:-translate-y-1 z-6">
                         {/* Company Logo */}
-                        <div className="grid place-items-center">
-                            <img className="p-5" src={workExperience.cardImg} alt={workExperience.cardImgAlt} />
+                        <div className="grid place-items-center h-full w-full overflow-hidden">
+                            <img className="p-5 object-contain max-h-full" src={workExperience.cardImg} alt={workExperience.cardImgAlt} />
                         </div>  
                         {/* Description */}
                         <div className="relative py-0 px-5 md:p-5 overflow-hidden">
