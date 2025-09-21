@@ -1,14 +1,20 @@
 [
   {
-    "title": "TEMP DATA - Game Engine",
-    "slug": "game-engine-clone",
-    "description": "TEMP DATA - A lightweight 3D engine built with WebGL.",
-    "content": "TEMP DATA - Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
-  },
+    "title": "To Do - A Task Management and Tracking Web App",
+    "slug": "to_do_app",
+    "description": "An expanded upon open source project aiming to steamline task management.",
+    "content": "This app was built by myself and a team of four other developers over the course of four months as a term long project in our capstone software design course. We expanded drastically on the original open source design, implemented many new features and improved accessability.",
+    "projectLink": "https://ben-turner-theijsmeijer.github.io/To-Do-App/",
+    "img": "images/empty",
+    "imgAlt": "Sneak peak at the content of the To-Do App homepage."
+},
   {
-    "title": "TEMP DATA - History of Planet Earth",
+    "title": "Bygone Eras - A History of our Planet",
     "slug": "history_of_earth",
-    "description": "TEMP DATA - A Site cataloging some interesting and noteworthy events in earths history from the very beggining up to preset day",
-    "content": "TEMP DATA - Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos."
+    "description": "A Site cataloging some interesting and noteworthy events in earths history from our molten rock beggingings up to preset day",
+    "content": "TEMP DATA - Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.",
+    "projectLink": "https://ben-turner-theijsmeijer.github.io/Bygone_Eras/",
+    "img": "images/Bygone_Eras.png",
+    "imgAlt": "Sneak peak at the content of the Bygone Eras homepage."
   }
 ]
