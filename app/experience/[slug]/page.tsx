@@ -35,9 +35,10 @@ export default function ExperiencePage ({ params }: { params: Promise<{ slug: st
                         </Link>
                     </div>
                     <div className="bg-[var(--accent3)] border-t-10 border-t-transparent border-b-10 border-b-transparent border-l-10 border-l-[var(--accent4)]"></div>
-                    <div className="bg-[var(--accent3)] px-2">{experience.slug}</div>
+                    <div className="bg-[var(--accent3)] px-2">{experience.articleTitle}</div>
                     <div className="border-t-10 border-t-transparent border-b-10 border-b-transparent border-l-10 border-l-[var(--accent3)]"></div>
                 </div>
+
                 {/* Article Body */}
                 <div className="my-10 w-[70%] p-4 grid grid-cols-1 justify-items-center bg-[var(--accent2)]">
                 <div className="my-5 py-25 lg:px-15 xl:px-25 w-[95%] p-8 overflow-hidden border-[var(--accent3)] border-2">
@@ -58,10 +59,11 @@ export default function ExperiencePage ({ params }: { params: Promise<{ slug: st
                         <p className="text-gray-700">{experience.aboutTheEmployer}</p>
                     </div>
                     {/* Image 1*/}
-                    <div>
+                    <div className="grid grid-cols-1 justify-items-center">
                         <img className="h-auto w-auto" src={experience.articleImg1} alt={experience.articleImg1Alt} />
                         <p className="text-center font-light text-sm text-gray-400">{experience.articleImg1Desc}</p>
                     </div>
+
                     {/* Work term Goals */}
                     <div>
                         <h2 className="text-3xl font-semibold m-4 text-center">Workterm Goals</h2>
@@ -74,7 +76,7 @@ export default function ExperiencePage ({ params }: { params: Promise<{ slug: st
                                 <p className="text-gray-500 pt-4"><i><b>Reflection:</b></i> {experience.goalReflection1}</p>
                             </div>
                         </div>
-                        <div className="my-4 pt-0.5 w-auto bg-gray-500"></div>
+                        <div className="my-4 pt-0.5 w-auto bg-[var(--accent3)]"></div>
                         {/* Goal 2 */}
                         <div className="my-4">
                             <span className="font-bold text-gray-700">{experience.goalType2}</span>
@@ -84,7 +86,7 @@ export default function ExperiencePage ({ params }: { params: Promise<{ slug: st
                                 <p className="text-gray-500 pt-4"><i><b>Reflection:</b></i> {experience.goalReflection2}</p>
                             </div>
                         </div>
-                        <div className="my-4 pt-0.5 w-auto bg-gray-500"></div>
+                        <div className="my-4 pt-0.5 w-auto bg-[var(--accent3)]"></div>
                         {/* Goal 3 */}
                         <div className="my-4">
                             <span className="font-bold text-gray-700">{experience.goalType3}</span>
@@ -94,7 +96,7 @@ export default function ExperiencePage ({ params }: { params: Promise<{ slug: st
                                 <p className="text-gray-500 pt-4"><i><b>Reflection:</b></i> {experience.goalReflection3}</p>
                             </div>
                         </div>
-                        <div className="my-4 pt-0.5 w-auto bg-gray-500"></div>
+                        <div className="my-4 pt-0.5 w-auto bg-[var(--accent3)]"></div>
                         {/* Goal 4 */}
                         <div className="my-4">
                             <span className="font-bold text-gray-700">{experience.goalType4}</span>
@@ -104,7 +106,7 @@ export default function ExperiencePage ({ params }: { params: Promise<{ slug: st
                                 <p className="text-gray-500 pt-4"><i><b>Reflection:</b></i> {experience.goalReflection4}</p>
                             </div>
                         </div>
-                        <div className="my-4 pt-0.5 w-auto bg-gray-500"></div>
+                        <div className="my-4 pt-0.5 w-auto bg-[var(--accent3)]"></div>
                         {/* Goal 5 */}
                         <div className="my-4">
                             <span className="font-bold text-gray-700">{experience.goalType5}</span>
@@ -115,13 +117,14 @@ export default function ExperiencePage ({ params }: { params: Promise<{ slug: st
                             </div>
                         </div>
                     </div>
+
                     {/* Job Description */}
                     <div>
                         <h2 className="text-3xl font-semibold m-4 text-center">Job Description</h2>
                         <p className="text-gray-500">{experience.jobDesctiption}</p>
                     </div>
                     {/* Image 2 */}
-                    <div>
+                    <div className="grid grid-cols-1 justify-items-center">
                         <img className="h-auto w-auto" src={experience.articleImg2} alt={experience.articleImg2Alt} />
                         <p className="text-center font-light text-sm text-gray-400">{experience.articleImg2Desc}</p>
                     </div>
