@@ -22,8 +22,10 @@ export default function ExperiencePage ({ params }: { params: Promise<{ slug: st
             <div className="w-full max-w-[1600px] mx-auto whitespace-pre-line grid grid-cols-1 justify-items-center">
                 {/* breadcrumb trail */}
                 <div className="w-[70%] flex mt-10">
-                    <div className="bg-[var(--accent5)] px-2 text-[var(--nav-foreground)]">Experience</div>
-                    <div className="bg-[var(--accent3)] border-t-10 border-t-transparent border-b-10 border-b-transparent border-l-10 border-l-[var(--accent5)]"></div>
+                    <div className="bg-[var(--accent5)] px-2 text-[var(--nav-foreground)]">Home</div>
+                    <div className="bg-[var(--accent4)] border-t-10 border-t-transparent border-b-10 border-b-transparent border-l-10 border-l-[var(--accent5)]"></div>
+                    <div className="bg-[var(--accent4)] px-2 text-[var(--nav-foreground)]">Experience</div>
+                    <div className="bg-[var(--accent3)] border-t-10 border-t-transparent border-b-10 border-b-transparent border-l-10 border-l-[var(--accent4)]"></div>
                     <div className="bg-[var(--accent3)] px-2">{experience.slug}</div>
                     <div className="border-t-10 border-t-transparent border-b-10 border-b-transparent border-l-10 border-l-[var(--accent3)]"></div>
                 </div>
