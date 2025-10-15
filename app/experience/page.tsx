@@ -1,6 +1,6 @@
 import { ComingSoon } from "./../components/comingSoon";
 import Link from "next/link";
-import workExperienceData from "@/data/workExperience.json";
+import workExperienceData from "@/data/coopWorkExperience.json";
 
 export default function Experiences() {
     return (

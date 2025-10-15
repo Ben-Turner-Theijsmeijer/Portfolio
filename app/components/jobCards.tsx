@@ -1,5 +1,5 @@
 // this is how Job Experience Cards are generated
-import workExperienceData from "@/data/workExperience.json";
+import coopWorkExperienceData from "@/data/coopWorkExperience.json";
 import Link from "next/link";
 
 
@@ -7,7 +7,7 @@ export const JobCards = () => {
     return (
         <div className="relative">
             {/* Jobs */}
-            {workExperienceData.slice(0, 3).map((workExperience) => (
+            {coopWorkExperienceData.slice(0, 3).map((workExperience) => (
                 <div key={workExperience.slug} className="">
                     <Link href={`/experience/${workExperience.slug}`} className="relative w-[100%] flex justify-center group">
                         <div className="grid md:grid-cols-2 md:grid-rows-1 grid-rows-[auto_auto] m-[1vh] w-[90%] work-experience h-[330px] sm:h-[400px] md:h-[265px] bg-[var(--midground)] border-3 border-[var(--accent5)] ease-out duration-200 group-hover:bg-[var(--background)] group-hover:-translate-x-1 group-hover:-translate-y-1 z-6">
