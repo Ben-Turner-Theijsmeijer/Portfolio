@@ -1,29 +1,15 @@
 import { MapPin } from "lucide-react";
 import * as motion from "motion/react-client"
-import { JobCards } from "../components/jobCards";
+import { ComingSoon } from "../components/comingSoon";
 import Link from "next/link";
 
 export default function AboutMe() {
   
     return (
         <div className="w-full max-w-[1600px] mx-auto relative">
-            {/* Hero Section */}
+            <ComingSoon />
             <div className="py-25 lg:px-15 xl:px-25 flex flex-col md:flex-row items-center justify-around -z-5 p-8 overflow-hidden">
                 <div className="md:w-3/5">
-                    <h1 className="text-[var(--p0)] text-5xl sm:text-6xl font-bold mb-2 duration-700">Hi, I’m <span className="text-[var(--accent3)] duration-700 hover:text-[var(--accent4)]">Ben Turner-Theijsmeijer</span></h1>
-                    <h2 className="text-[var(--p5)] text-2xl sm:text-3xl mb-4">Creator, Artist, Software Developer</h2>
-                    <p className="text-[var(--p2)] text-base sm:text-lg mb-4">
-                        I am a recent graduate from the University of Guelph with a bachelor's degree
-                        in software engineering.
-                    </p>
-                    <p className="text-[var(--p2)] text-base sm:text-lg mb-6">
-                        Regardless of the medium, creation is my passion—through code, art,
-                        games, or otherwise I love to dive in and get my hands dirty.
-                    </p>
-                    <div className="text-[var(--p1)] flex items-center gap-2">
-                        <MapPin size={20} className="text-[var(--accent4)]"/>
-                        <span>Guelph ON, Canada</span>
-                    </div> 
 
                     {/* Social Links */}
                     <div className="links max-sm:h-8">
@@ -47,149 +33,10 @@ export default function AboutMe() {
                     </div>
                 </div>
 
-                <div className="md:w-2/5 flex justify-center mt-8 md:mt-0 relative">
-                    {/* Stripe section */}
-                    <div className="Stripe absolute inset-0 flex justify-center items-center">
-                        <motion.div className="absolute rotate-[260deg] md:rotate-[12deg] bg-[var(--accent4)] h-500 w-1/15 translate-y-[-3.5%] md:translate-y-[-18%]"
-                            variants={stripeVariants}
-                            initial="hidden"
-                            animate="visible"
-                            transition={{
-                                duration: 0.8,
-                                type: "spring",
-                                stiffness: 100,
-                                damping: 10,
-                                delay: 0.4,
-                            }} />
-                        <motion.div className="absolute rotate-[260deg] md:rotate-[12deg] bg-[var(--accent3)] h-500 w-1/15 translate-y-[-4%] md:translate-y-[-23%]"
-                            variants={stripeVariants}
-                            initial="hidden"
-                            animate="visible"
-                            transition={{
-                                duration: 0.8,
-                                type: "spring",
-                                stiffness: 100,
-                                damping: 10,
-                                delay: 0.4,
-                            }} />
-
-                        <motion.div className="absolute rotate-[260deg] md:rotate-[12deg] bg-[var(--accent4)] h-500 w-2/5 translate-y-[2%] md:translate-y-[25%]"
-                            variants={stripeVariants}
-                            initial="hidden"
-                            animate="visible"
-                            transition={{
-                                duration: 0.8,
-                                type: "spring",
-                                stiffness: 80,
-                                damping: 10,
-                                delay: 0.4,
-                            }}  />
-                        <motion.div className="absolute rotate-[260deg] md:rotate-[12deg] bg-[var(--accent3)] h-500 w-2/5 translate-y-[1%] md:translate-y-[20%]"
-                            variants={stripeVariants}
-                            initial="hidden"
-                            animate="visible"
-                            transition={{
-                                duration: 0.8,
-                                type: "spring",
-                                stiffness: 80,
-                                damping: 10,
-                                delay: 0.4,
-                            }}  />
-                    </div>
-
-                    {/* Circle around portrait */}
-                    <motion.div className="max-sm:hidden absolute inset-0 flex justify-center items-center"
-                        variants={circleVariant}
-                            initial="hidden"
-                            animate="visible"
-                            transition={{
-                                duration: 1,
-                                delay: 0,
-                            }}  >
-                            <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent1)] mask-conic-from-40% mask-conic-to-40% rotate-[-50deg] translate-y-[2%] translate-x-[2%]"/>
-                            <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent)] mask-conic-from-40% mask-conic-to-40% rotate-[-50deg]"/>
-                            <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent1)] mask-conic-from-10% mask-conic-to-10% rotate-[105deg] translate-y-[2%] translate-x-[2%]"/>
-                            <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent)] mask-conic-from-10% mask-conic-to-10% rotate-[105deg]"/>
-                            <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent1)] mask-conic-from-5% mask-conic-to-5% rotate-[152deg] translate-y-[2%] translate-x-[2%]"/>
-                            <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent)] mask-conic-from-5% mask-conic-to-5% rotate-[152deg]"/>
-                            <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent1)] mask-conic-from-2% mask-conic-to-2% rotate-[177deg] translate-y-[2%] translate-x-[2%]"/>
-                            <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent)] mask-conic-from-2% mask-conic-to-2% rotate-[177deg]"/>
-                            <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent1)] mask-conic-from-2% mask-conic-to-2% rotate-[190deg] translate-y-[2%] translate-x-[2%]"/>
-                            <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent)] mask-conic-from-2% mask-conic-to-2% rotate-[190deg]"/>
-                    </motion.div>
-
-                    {/* Portrait Section */}
-                    <div className="relative size-60 sm:size-65 md:size-70 rounded-full overflow-hidden border-r-8 border-b-8 black shadow-lg">
-                        <img
-                            src="images/Ben_PFP.jpg"
-                            alt="Ben"
-                            className="w-full h-full object-cover"
-                        />
-                    </div>
-                </div>  
-            </div>
-
-            {/* hero body separator */}
-            <div className="grid grid-row-2">
-                <div className="w-auto bg-[var(--accent4)] justify-center h-2" />
-                <div className="w-auto bg-[var(--accent5)] justify-center h-2" />
-            </div>
-
-            {/* Work Experience Section */}
-            <div className="w-full h-auto flex justify-center bg-[var(--midground)]">
-                <div className="my-25 p-10 w-[60%] min-w-[400px] grid justify-center bg-[var(--accent3)] z-5">
-                    <div className="text-center">
-                        <h1 className="text-[var(--p0)] text-4xl sm:text-5xl font-bold duration-700">Experience</h1>
-                        <p className="text-base sm:text-lg font-extralight mb-2 duration-700">Software Development & IT</p>
-                    </div>
-
-                    {/* Display for three most recent Jobs from the experience JSON */}
-                    <JobCards />
-
-                    <div className="text-center mt-5">
-                        <Link href="/experience" className="text-[var(--p0)] duration-200 hover:text-[var(--accent2)]">
-                            <h2 className="text-2xl sm:text-3xl font-light">See More 🢂</h2>
-                        </Link>
-                    </div>
-                </div>
-
-                {/* Work Experience BG Divs */}
-                <motion.div className="absolute mt-25 p-10 w-[60%] min-w-[400px] sm:h-[400px] md:h-[1060px] bg-[var(--accent5)]"
-                    initial={{rotate: 0}}
-                    whileInView={{rotate: 8}}
-                    viewport={{ amount: 0.5 }}
-                    transition={{
-                        type: "spring",
-                        bounce: 0.4,
-                        duration: 0.8,
-                    }} 
-                />
-                <motion.div className="absolute mt-25 p-10 w-[60%] min-w-[400px] sm:h-[400px] md:h-[1060px] bg-[var(--accent4)]"
-                    initial={{rotate: 0}}
-                    whileInView={{rotate: 4}}
-                    viewport={{ amount: 0.5 }}
-                    transition={{
-                        type: "spring",
-                        bounce: 0.4,
-                        duration: 0.6,
-                    }}
-                />
-            </div>
-            
-            <div className="h-100">
+               
             </div>
         </div>
 
         
     );  
 }
-
-const stripeVariants = {
-    hidden: { opacity: 0, x: 100 },
-    visible: { opacity: 1, x: 0 },
-};
-  
-const circleVariant = {
-    hidden: { opacity: 0, rotate: 0},
-    visible: { opacity: 1, rotate: 10 },
-};
