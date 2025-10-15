@@ -48,18 +48,18 @@ export default function ExperiencePage ({ params }: { params: Promise<{ slug: st
                 <div className="my-5 py-25 lg:px-15 xl:px-25 w-[95%] p-8 overflow-hidden border-[var(--accent3)] border-2">
                     {/* Header */}
                     <div>
-                        <h1 className="text-[var(--p0)] text-4xl font-bold mb-4">{experience.articleTitle}</h1>
+                        <h1 className="text-4xl font-bold mb-4">{experience.articleTitle}</h1>
                         <p className="text-[var(--p2)] text-2xl">{experience.company}</p>
                         <p className="text-[var(--p4)] text-xl">{experience.jobTitle}</p>
                     </div>
                     {/* Introduction */}
                     <div>
-                        <h2 className="text-[var(--p0)] text-3xl font-semibold m-4 text-center">Introduction</h2>
+                        <h2 className="text-3xl font-semibold m-4 text-center">Introduction</h2>
                         <p className="text-[var(--p4)]">{experience.introduction}</p>
                     </div>
                     {/* About the Employer */}
                     <div>
-                        <h2 className="text-[var(--p0)] text-3xl font-semibold m-4 text-center">About the Employer</h2>
+                        <h2 className="text-3xl font-semibold m-4 text-center">About the Employer</h2>
                         <p className="text-[var(--p2)]">{experience.aboutTheEmployer}</p>
                     </div>
                     {/* Image 1*/}
@@ -70,7 +70,7 @@ export default function ExperiencePage ({ params }: { params: Promise<{ slug: st
 
                     {/* Work term Goals */}
                     <div>
-                        <h2 className="text-[var(--p0)] text-3xl font-semibold m-4 text-center">Workterm Goals</h2>
+                        <h2 className="text-3xl font-semibold m-4 text-center">Workterm Goals</h2>
                         {/* Goal 1 */}
                         <div className="my-4">
                             <span className="text-[var(--p2)] font-bold">{experience.goalType1}</span>
@@ -124,7 +124,7 @@ export default function ExperiencePage ({ params }: { params: Promise<{ slug: st
 
                     {/* Job Description */}
                     <div>
-                        <h2 className="text-[var(--p0)] text-3xl font-semibold m-4 text-center">Job Description</h2>
+                        <h2 className="text-3xl font-semibold m-4 text-center">Job Description</h2>
                         <p className="text-[var(--p4)]">{experience.jobDesctiption}</p>
                     </div>
                     {/* Image 2 */}
@@ -134,12 +134,12 @@ export default function ExperiencePage ({ params }: { params: Promise<{ slug: st
                     </div>
                     {/* Conclusion */}
                     <div>
-                        <h2 className="text-[var(--p0)] text-3xl font-semibold m-4 text-center">Conclusion</h2>
+                        <h2 className="text-3xl font-semibold m-4 text-center">Conclusion</h2>
                         <p className="text-[var(--p2)]">{experience.conclusion}</p>
                     </div>
                     {/* Acknowledgements */}
                     <div>
-                        <h2 className="text-[var(--p0)] text-3xl font-semibold m-4 text-center">Acknowledgements</h2>
+                        <h2 className="text-3xl font-semibold m-4 text-center">Acknowledgements</h2>
                         <p className="text-[var(--p4)]">{experience.acknowledgements}</p>
                     </div>
                 </div>
