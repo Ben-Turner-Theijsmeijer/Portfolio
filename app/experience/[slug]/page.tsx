@@ -35,7 +35,11 @@ export default function ExperiencePage ({ params }: { params: Promise<{ slug: st
                         </Link>
                     </div>
                     <div className="bg-[var(--accent3)] border-t-10 border-t-transparent border-b-10 border-b-transparent border-l-10 border-l-[var(--accent4)]"></div>
-                    <div className="bg-[var(--accent3)] px-2">{experience.articleTitle}</div>
+                    <div className="bg-[var(--accent3)] px-2">
+                        <Link href={experience.slug}>
+                            {experience.articleTitle}
+                        </Link>
+                    </div>
                     <div className="border-t-10 border-t-transparent border-b-10 border-b-transparent border-l-10 border-l-[var(--accent3)]"></div>
                 </div>
 
@@ -60,7 +64,7 @@ export default function ExperiencePage ({ params }: { params: Promise<{ slug: st
                     </div>
                     {/* Image 1*/}
                     <div className="grid grid-cols-1 justify-items-center">
-                        <img className="h-auto w-auto" src={experience.articleImg1} alt={experience.articleImg1Alt} />
+                        <img className="px-5 pt-5 pb-2 h-auto w-auto" src={experience.articleImg1} alt={experience.articleImg1Alt} />
                         <p className="text-center font-light text-sm text-gray-400">{experience.articleImg1Desc}</p>
                     </div>
 
@@ -125,7 +129,7 @@ export default function ExperiencePage ({ params }: { params: Promise<{ slug: st
                     </div>
                     {/* Image 2 */}
                     <div className="grid grid-cols-1 justify-items-center">
-                        <img className="h-auto w-auto" src={experience.articleImg2} alt={experience.articleImg2Alt} />
+                        <img className="px-5 pt-5 pb-2 h-auto w-auto" src={experience.articleImg2} alt={experience.articleImg2Alt} />
                         <p className="text-center font-light text-sm text-gray-400">{experience.articleImg2Desc}</p>
                     </div>
                     {/* Conclusion */}

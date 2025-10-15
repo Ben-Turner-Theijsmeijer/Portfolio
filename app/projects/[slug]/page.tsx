@@ -30,12 +30,16 @@ export default function ProjectPage({ params }: { params: Promise<{ slug: string
                     </div>
                     <div className="bg-[var(--accent4)] border-t-10 border-t-transparent border-b-10 border-b-transparent border-l-10 border-l-[var(--accent5)]"></div>
                     <div className="bg-[var(--accent4)] px-2 text-[var(--nav-foreground)]">
-                        <Link href="/experience">
+                        <Link href="/projects">
                             Projects
                         </Link>
                     </div>
                     <div className="bg-[var(--accent3)] border-t-10 border-t-transparent border-b-10 border-b-transparent border-l-10 border-l-[var(--accent4)]"></div>
-                    <div className="bg-[var(--accent3)] px-2">{project.title}</div>
+                    <div className="bg-[var(--accent3)] px-2">
+                        <Link href={project.slug}>
+                            {project.title}
+                        </Link>
+                    </div>
                     <div className="border-t-10 border-t-transparent border-b-10 border-b-transparent border-l-10 border-l-[var(--accent3)]"></div>
                 </div>
                 <div className="py-25 lg:px-15 xl:px-25 w-[70%] p-8 overflow-hidden">
