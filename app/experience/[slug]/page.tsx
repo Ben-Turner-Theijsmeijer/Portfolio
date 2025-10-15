@@ -1,5 +1,6 @@
 import coopWorkExperienceData from "@/data/coopWorkExperience.json";
 import Link from "next/link";
+import { assetPath } from "../../utils/assetPath";
 import { notFound } from "next/navigation";
 import { use } from 'react'
 
@@ -64,7 +65,7 @@ export default function ExperiencePage ({ params }: { params: Promise<{ slug: st
                     </div>
                     {/* Image 1*/}
                     <div className="grid grid-cols-1 justify-items-center">
-                        <img className="px-5 pt-5 pb-2 h-auto w-auto" src={experience.articleImg1} alt={experience.articleImg1Alt} />
+                        <img className="px-5 pt-5 pb-2 h-auto w-auto" src={assetPath(experience.articleImg1)} alt={experience.articleImg1Alt} />
                         <p className="text-[var(--p5)] text-center font-light text-sm">{experience.articleImg1Desc}</p>
                     </div>
 
