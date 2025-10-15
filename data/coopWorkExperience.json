@@ -32,10 +32,10 @@
         "acknowledgements": "I want to extend another extra special thank you to Josh Janicas, my supervisor, for his incredible guidance and mentoring over these past eight months. When first hired for this position I was honestly surprised as I felt I was incredibly unqualified and had expressed my lack of knowledge in regards to SQL and other aspects of the job during the interview. Despite this I was hired and treated incredibly well by my team and supervisor. Josh was always available to answer my questions in times of need and helped me throughout the entire work term. It was amazing to work alongside such a supportive senior developer, I feel as though my time at Camis truly taught me more than any University course ever did.  I went from having never worked with most of the languages required for the roll, including SQL, snowflake, and C#, to feeling competent and capable of tackling anything that was assigned to me. For his incredible guidance I am incredibly grateful.",
         "cardImg": "images/Camis_Logo.png",
         "cardImgAlt": "Camis Inc Logo",
-        "articleImg1": "images/Camis_Olympics.avif",
+        "articleImg1": "/images/Camis_Olympics.avif",
         "articleImg1Alt": "Failed to Load Camis Olympics Results",
         "articleImg1Desc": "The Summer 2024 Camis Co-ops who posing for a photo after winning the team tent speed building event held for the Camis Olympics team building day. \n\n From left to right: Jen, Ben T (me), Ben C, and Joudat",
-        "articleImg2": "images/Camis_Logo_Long.png",
+        "articleImg2": "/images/Camis_Logo_Long.png",
         "articleImg2Alt": "Failed to Load Camis Logo",
         "articleImg2Desc": ""
     },
