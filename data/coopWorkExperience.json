@@ -32,10 +32,10 @@
         "acknowledgements": "I want to extend another extra special thank you to Josh Janicas, my supervisor, for his incredible guidance and mentoring over these past eight months. When first hired for this position I was honestly surprised as I felt I was incredibly unqualified and had expressed my lack of knowledge in regards to SQL and other aspects of the job during the interview. Despite this I was hired and treated incredibly well by my team and supervisor. Josh was always available to answer my questions in times of need and helped me throughout the entire work term. It was amazing to work alongside such a supportive senior developer, I feel as though my time at Camis truly taught me more than any University course ever did.  I went from having never worked with most of the languages required for the roll, including SQL, snowflake, and C#, to feeling competent and capable of tackling anything that was assigned to me. For his incredible guidance I am incredibly grateful.",
         "cardImg": "images/Camis_Logo.png",
         "cardImgAlt": "Camis Inc Logo",
-        "articleImg1": "/images/Camis_Olympics.avif",
+        "articleImg1": "../images/Camis_Olympics.avif",
         "articleImg1Alt": "Failed to Load Camis Olympics Results",
         "articleImg1Desc": "The Summer 2024 Camis Co-ops who posing for a photo after winning the team tent speed building event held for the Camis Olympics team building day. \n\n From left to right: Jen, Ben T (me), Ben C, and Joudat",
-        "articleImg2": "/images/Camis_Logo_Long.png",
+        "articleImg2": "../images/Camis_Logo_Long.png",
         "articleImg2Alt": "Failed to Load Camis Logo",
         "articleImg2Desc": ""
     },
@@ -72,10 +72,10 @@
         "acknowledgements": "I want to extend a special thank you to Josh Janicas, my supervisor, for his incredible guidance and mentoring over these past few months. When I was hired for this position I was certainly underqualified for the job and was frankly surprised that I got it. Despite this fact I was still  brought aboard and given a tremendous amount of help and support through guides and walkthroughs on how to work with SQL, snowflake, Meltano, the ELT pipeline, C# and much more created by Josh to help get me up to speed. Along with this for any new assignment I was unfamiliar with he would work with and shadow me as I worked to ensure I understood what I was doing and correct any mistakes I might have been making. He has been very supportive of me and encourages me to try new things and to look at this co-op as a learning opportunity",
         "cardImg": "images/Camis_Logo.png",
         "cardImgAlt": "Camis Inc Logo",
-        "articleImg1": "images/Camis_Coops.png",
+        "articleImg1": "../images/Camis_Coops.png",
         "articleImg1Alt": "Failed to Load Camis 2024 co-op cohort",
         "articleImg1Desc": "Photo taken from the Camis LinkedIn page: \n The Winter 2024 Camis Co-ops Posing for a photo a few days after stating at the company. \n From left to right: Ben T (me), Jen, Ben C, Adina, Joudat, Amro",
-        "articleImg2": "images/Camis_Logo_Long.png",
+        "articleImg2": "../images/Camis_Logo_Long.png",
         "articleImg2Alt": "Failed to Load Camis Logo",
         "articleImg2Desc": ""
     },
@@ -152,10 +152,10 @@
         "acknowledgements": "I would Like to take a moment to thank my supervisor Jill Hogg for presenting me with the opportunity to work in this dynamic and ever changing field alongside herself, the other teams in CCS, and my fellow coop students. She was a great teacher, always willing to take a moment and provide guidance about how to best approach an IT issue that I had not worked with before, give advice on how to correct any mistakes, checking in with us coop students on a regular basis to see how we were doing and if we had any questions or concerns, and really making us all feel included and like integral parts of the Help Centre team. \n\n I would also like to thank my fellow co-op students and friends, Victoria, Connor, Gavin, Mehtab, and Yihao who worked alongside me for either four or eight months, depending on their own co-op work term schedules, while we all navigated the busiest and most hectic semester the Help Centre has seen in the past ten years. They really made the whole experience much more enriching as we collaborated together to provide the best support we could. A team can only be as strong as its weakest link and our team worked together to make sure that everyone was comfortable and knowledgeable on the many issues we face so that we could all tackle them with confidence. When there was an issue that we did not know we would work together to find solutions.",
         "cardImg": "images/Guelph_Logo_Stacked.png",
         "cardImgAlt": "Failed to Load University of Guelph Logo",
-        "articleImg1": "images/CCS_Team_Fall_2022.avif",
+        "articleImg1": "../images/CCS_Team_Fall_2022.avif",
         "articleImg1Alt": "Me and my second work term co-op student cohort standing in the UoG Library",
         "articleImg1Desc": "Our Team Pictured in front of our IT Help Desk In the University library. \n From left to right: Connor, Mehtab, Sam, Yihao,  Ben (Me), Jill (supervisor)",
-        "articleImg2": "images/CCS_Logo.avif",
+        "articleImg2": "../images/CCS_Logo.avif",
         "articleImg2Alt": "The CCS Department Logo",
         "articleImg2Desc": ""
     }

@@ -6,9 +6,6 @@ const nextConfig: NextConfig = {
   basePath: "/Portfolio",
   assetPrefix: "/Portfolio",
   reactStrictMode: true,
-  env: {
-    NEXT_PUBLIC_BASE_PATH: "/Portfolio",
-  },
 };
 
 export default nextConfig;

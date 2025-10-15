@@ -14,7 +14,7 @@
     "description": "A Site cataloging some interesting and noteworthy events in earths history from our molten rock beggingings up to preset day",
     "content": "TEMP DATA - Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.",
     "projectLink": "https://ben-turner-theijsmeijer.github.io/Bygone_Eras/",
-    "img": "images/Bygone_Eras.png",
+    "img": "../images/Bygone_Eras.png",
     "imgAlt": "Sneak peak at the content of the Bygone Eras homepage."
 },
   {
