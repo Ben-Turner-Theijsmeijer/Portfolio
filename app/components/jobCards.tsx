@@ -18,11 +18,11 @@ export const JobCards = () => {
                             {/* Description */}
                             <div className="relative py-0 px-5 md:p-5 overflow-hidden">
                                 <div className="absolute max-md:hidden top-1/2 left-1 -translate-x-1/2 -translate-y-1/2 h-[50%] w-px bg-linear-to-b group-hover:from-[var(--background)] from-[var(--midground)] via-[var(--accent)] group-hover:to-[var(--background)] to-[var(--midground)] z-10" />
-                                <h2 className="text-2xl sm:text-4xl font-bold text-[var(--accent6)] text-shadow-sm">{workExperience.company}</h2>
-                                <h3 className="text-base sm:text-lg text-gray-700  text-shadow-xs">{workExperience.jobTitle}</h3>
+                                <h2 className="text-[var(--accent6)] text-2xl sm:text-4xl font-bold text-shadow-sm">{workExperience.company}</h2>
+                                <h3 className="text-[var(--p2)] text-base sm:text-lg text-shadow-xs">{workExperience.jobTitle}</h3>
                                 <div className="max-md:text-right overflow-y-auto h-[70%] pr-2">
-                                    <p className="text-base/6 max-md:hidden mt-4 text-gray-700">{workExperience.cardSummary}</p>
-                                    <p className="text-base/6 md:hidden mt-4 text-gray-700">Learn More  &gt; </p>
+                                    <p className="text-[var(--p3)] text-base/6 max-md:hidden mt-4">{workExperience.cardSummary}</p>
+                                    <p className="text-[var(--p2)] text-base/6 md:hidden mt-4">Learn More  &gt; </p>
                                 </div>
                             </div>
                         </div>

@@ -43,8 +43,8 @@ export default function ProjectPage({ params }: { params: Promise<{ slug: string
                     <div className="border-t-10 border-t-transparent border-b-10 border-b-transparent border-l-10 border-l-[var(--accent3)]"></div>
                 </div>
                 <div className="py-25 lg:px-15 xl:px-25 w-[70%] p-8 overflow-hidden">
-                    <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
-                    <p className="text-gray-700">{project.content}</p>
+                    <h1 className="text-[var(--p0)] text-4xl font-bold mb-4">{project.title}</h1>
+                    <p className="text-[var(--p2)]">{project.content}</p>
                     <a href={project.projectLink}>Try it!</a>
                     <img src={project.img} alt={project.imgAlt} />
                 </div>

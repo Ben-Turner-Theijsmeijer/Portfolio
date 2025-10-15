@@ -10,17 +10,17 @@ export default function AboutMe() {
             {/* Hero Section */}
             <div className="py-25 lg:px-15 xl:px-25 flex flex-col md:flex-row items-center justify-around -z-5 p-8 overflow-hidden">
                 <div className="md:w-3/5">
-                    <h1 className="text-5xl sm:text-6xl font-bold mb-2 duration-700">Hi, I’m <span className="duration-700 text-[var(--accent3)] hover:text-[var(--accent4)]">Ben Turner-Theijsmeijer</span></h1>
-                    <h2 className="text-2xl sm:text-3xl text-gray-400 mb-4">Creator, Artist, Software Developer</h2>
-                    <p className="text-base sm:text-lg mb-4 text-gray-700">
+                    <h1 className="text-[var(--p0)] text-5xl sm:text-6xl font-bold mb-2 duration-700">Hi, I’m <span className="text-[var(--accent3)] duration-700 hover:text-[var(--accent4)]">Ben Turner-Theijsmeijer</span></h1>
+                    <h2 className="text-[var(--p5)] text-2xl sm:text-3xl mb-4">Creator, Artist, Software Developer</h2>
+                    <p className="text-[var(--p2)] text-base sm:text-lg mb-4">
                         I am a recent graduate from the University of Guelph with a bachelor's degree
                         in software engineering.
                     </p>
-                    <p className="text-base sm:text-lg mb-6 text-gray-700">
+                    <p className="text-[var(--p2)] text-base sm:text-lg mb-6">
                         Regardless of the medium, creation is my passion—through code, art,
                         games, or otherwise I love to dive in and get my hands dirty.
                     </p>
-                    <div className="flex items-center gap-2 text-gray-800">
+                    <div className="text-[var(--p1)] flex items-center gap-2">
                         <MapPin size={20} className="text-[var(--accent4)]"/>
                         <span>Guelph ON, Canada</span>
                     </div> 
@@ -139,7 +139,7 @@ export default function AboutMe() {
             <div className="w-full h-auto flex justify-center bg-[var(--midground)]">
                 <div className="my-25 p-10 w-[60%] min-w-[400px] grid justify-center bg-[var(--accent3)] z-5">
                     <div className="text-center">
-                        <h1 className="text-4xl sm:text-5xl font-bold duration-700">Experience</h1>
+                        <h1 className="text-[var(--p0)] text-4xl sm:text-5xl font-bold duration-700">Experience</h1>
                         <p className="text-base sm:text-lg font-extralight mb-2 duration-700">Software Development & IT</p>
                     </div>
 
@@ -147,7 +147,7 @@ export default function AboutMe() {
                     <JobCards />
 
                     <div className="text-center mt-5">
-                        <Link href="/experience" className="duration-200 text-[var(--foreground)] hover:text-[var(--accent2)]">
+                        <Link href="/experience" className="text-[var(--p0)] duration-200 hover:text-[var(--accent2)]">
                             <h2 className="text-2xl sm:text-3xl font-light">See More 🢂</h2>
                         </Link>
                     </div>

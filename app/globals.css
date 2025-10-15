@@ -7,6 +7,12 @@
   --foreground: #171717;
   --nav-background: #161616;
   --nav-foreground: #e6e6e6;
+  --p0: #000000;
+  --p1: #1e2939;
+  --p2: #364153;
+  --p3: #4a5565;
+  --p4: #6a7282;
+  --p5: #99a1af;
   --accent: #ea9c58;
   --accent1: #674629;
   --accent2: #b9f8cf;
@@ -23,6 +29,12 @@
     --foreground: #ededed;
     --nav-background: #e6e6e6;
     --nav-foreground: #161616;
+    --p0: #000000;
+    --p1: #1e2939;
+    --p2: #364153;
+    --p3: #4a5565;
+    --p4: #6a7282;
+    --p5: #99a1af;
     --accent: #FFA737;
     --accent1: #674629;
     --accent2: #69b578;
