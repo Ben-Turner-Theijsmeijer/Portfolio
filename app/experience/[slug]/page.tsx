@@ -71,55 +71,11 @@ export default function ExperiencePage ({ params }: { params: Promise<{ slug: st
                     {/* Work term Goals */}
                     <div>
                         <h2 className="text-3xl font-semibold m-4 text-center">Workterm Goals</h2>
-                        {/* Goal 1 */}
-                        <div className="my-4">
-                            <span className="text-[var(--p2)] font-bold">{experience.goalType1}</span>
-                            <span className="text-[var(--p3)]">{experience.goal1}</span>
-                            <div className="px-15 py-5">
-                                <p className="text-[var(--p4)] pt-2"><i><b>Action Plan:</b></i> {experience.goalActionPlan1}</p>
-                                <p className="text-[var(--p4)] pt-4"><i><b>Reflection:</b></i> {experience.goalReflection1}</p>
-                            </div>
-                        </div>
-                        <div className="my-4 pt-0.5 w-auto bg-[var(--accent3)]"></div>
-                        {/* Goal 2 */}
-                        <div className="my-4">
-                            <span className="text-[var(--p2)] font-bold">{experience.goalType2}</span>
-                            <span className="text-[var(--p3)]">{experience.goal2}</span>
-                            <div className="px-15 py-5">
-                                <p className="text-[var(--p4)] pt-2"><i><b>Action Plan:</b></i> {experience.goalActionPlan2}</p>
-                                <p className="text-[var(--p4)] pt-4"><i><b>Reflection:</b></i> {experience.goalReflection2}</p>
-                            </div>
-                        </div>
-                        <div className="my-4 pt-0.5 w-auto bg-[var(--accent3)]"></div>
-                        {/* Goal 3 */}
-                        <div className="my-4">
-                            <span className="text-[var(--p2)] font-bold">{experience.goalType3}</span>
-                            <span className="text-[var(--p3)]">{experience.goal3}</span>
-                            <div className="px-15 py-5">
-                                <p className="text-[var(--p4)] pt-2"><i><b>Action Plan:</b></i> {experience.goalActionPlan3}</p>
-                                <p className="text-[var(--p4)] pt-4"><i><b>Reflection:</b></i> {experience.goalReflection3}</p>
-                            </div>
-                        </div>
-                        <div className="my-4 pt-0.5 w-auto bg-[var(--accent3)]"></div>
-                        {/* Goal 4 */}
-                        <div className="my-4">
-                            <span className="text-[var(--p2)] font-bold">{experience.goalType4}</span>
-                            <span className="text-[var(--p3)]">{experience.goal4}</span>
-                            <div className="px-15 py-5">
-                                <p className="text-[var(--p4)] pt-2"><i><b>Action Plan:</b></i> {experience.goalActionPlan4}</p>
-                                <p className="text-[var(--p4)] pt-4"><i><b>Reflection:</b></i> {experience.goalReflection4}</p>
-                            </div>
-                        </div>
-                        <div className="my-4 pt-0.5 w-auto bg-[var(--accent3)]"></div>
-                        {/* Goal 5 */}
-                        <div className="my-4">
-                            <span className="text-[var(--p2)] font-bold">{experience.goalType5}</span>
-                            <span className="text-[var(--p3)]">{experience.goal5}</span>
-                            <div className="px-15 py-5">
-                                <p className="text-[var(--p4)] pt-2"><i><b>Action Plan:</b></i> {experience.goalActionPlan5}</p>
-                                <p className="text-[var(--p4)] pt-4"><i><b>Reflection:</b></i> {experience.goalReflection5}</p>
-                            </div>
-                        </div>
+                        <WorkTermGoals goalType={experience.goalType1} goal={experience.goal1} goalActionPlan={experience.goalActionPlan1} goalReflection={experience.goalReflection1} nextGoal={experience.goal2}/>
+                        <WorkTermGoals goalType={experience.goalType2} goal={experience.goal2} goalActionPlan={experience.goalActionPlan2} goalReflection={experience.goalReflection2} nextGoal={experience.goal3}/>
+                        <WorkTermGoals goalType={experience.goalType3} goal={experience.goal3} goalActionPlan={experience.goalActionPlan3} goalReflection={experience.goalReflection3} nextGoal={experience.goal4}/>
+                        <WorkTermGoals goalType={experience.goalType4} goal={experience.goal4} goalActionPlan={experience.goalActionPlan4} goalReflection={experience.goalReflection4} nextGoal={experience.goal5}/>
+                        <WorkTermGoals goalType={experience.goalType5} goal={experience.goal5} goalActionPlan={experience.goalActionPlan5} goalReflection={experience.goalReflection5}/>
                     </div>
 
                     {/* Job Description */}
@@ -145,6 +101,25 @@ export default function ExperiencePage ({ params }: { params: Promise<{ slug: st
                 </div>
                 </div>
             </div>
+        </div>
+    );
+}
+
+// generates the my co-op work term goals depending on how many there are for a specific work term 
+function WorkTermGoals({goalType, goal, goalActionPlan, goalReflection, nextGoal}: {goalType?:string; goal?:string; goalActionPlan?:string; goalReflection?:string; nextGoal?:string}) {
+    if (!goal || goal.trim() === "") return null;
+    return (
+        <div>
+            <div className="my-4">
+                <span className="text-[var(--p2)] font-bold">{goalType}</span>
+                <span className="text-[var(--p3)]">{goal}</span>
+                <div className="px-15 py-5">
+                    <p className="text-[var(--p4)] pt-2"><i><b>Action Plan:</b></i> {goalActionPlan}</p>
+                    <p className="text-[var(--p4)] pt-4"><i><b>Reflection:</b></i> {goalReflection}</p>
+                </div>
+            </div>
+            {/* adds a divider line if it is not the last goal */}
+            {nextGoal && nextGoal.trim() !== "" && (<div className="my-4 pt-0.5 w-auto bg-[var(--accent3)]"></div>)}
         </div>
     );
 }
