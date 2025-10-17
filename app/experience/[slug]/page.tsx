@@ -44,61 +44,61 @@ export default function ExperiencePage ({ params }: { params: Promise<{ slug: st
                 </div>
 
                 {/* Article Body */}
-                <div className="my-10 w-[70%] p-4 grid grid-cols-1 justify-items-center bg-[var(--accent2)]">
-                <div className="my-5 py-25 lg:px-15 xl:px-25 w-[95%] p-8 overflow-hidden border-[var(--accent3)] border-2">
-                    {/* Header */}
-                    <div>
-                        <h1 className="text-4xl font-bold mb-4">{experience.articleTitle}</h1>
-                        <p className="text-[var(--p2)] text-2xl">{experience.company}</p>
-                        <p className="text-[var(--p4)] text-xl">{experience.jobTitle}</p>
-                    </div>
-                    {/* Introduction */}
-                    <div>
-                        <h2 className="text-3xl font-semibold m-4 text-center">Introduction</h2>
-                        <p className="text-[var(--p4)]">{experience.introduction}</p>
-                    </div>
-                    {/* About the Employer */}
-                    <div>
-                        <h2 className="text-3xl font-semibold m-4 text-center">About the Employer</h2>
-                        <p className="text-[var(--p2)]">{experience.aboutTheEmployer}</p>
-                    </div>
-                    {/* Image 1*/}
-                    <div className="grid grid-cols-1 justify-items-center">
-                        <img className="px-5 pt-5 pb-2 h-auto w-auto" src={experience.articleImg1} alt={experience.articleImg1Alt} />
-                        <p className="text-[var(--p5)] text-center font-light text-sm">{experience.articleImg1Desc}</p>
-                    </div>
+                <div className="my-10 w-[100%] sm:w-[85%] md:w-[70%] lg:w-[65%] p-1 sm:p-2 md:p-4 grid grid-cols-1 justify-items-center bg-[var(--accent2)]">
+                    <div className="my-2 sm:my-5 py-10 md:py-25 p-6 sm:p-8 lg:px-15 xl:px-25 w-[99%] sm:w-[97%] md:w-[95%] overflow-hidden border-[var(--accent3)] border-2">
+                        {/* Header */}
+                        <div>
+                            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">{experience.articleTitle}</h1>
+                            <p className="text-[var(--p2)] text-xl md:text-2xl">{experience.company}</p>
+                            <p className="text-[var(--p4)] text-lg md:text-xl">{experience.jobTitle}</p>
+                        </div>
+                        {/* Introduction */}
+                        <div>
+                            <h2 className="text-2xl md:text-3xl font-semibold m-4 text-center">Introduction</h2>
+                            <p className="text-[var(--p4)]">{experience.introduction}</p>
+                        </div>
+                        {/* About the Employer */}
+                        <div>
+                            <h2 className="text-2xl md:text-3xl font-semibold m-4 text-center">About the Employer</h2>
+                            <p className="text-[var(--p2)]">{experience.aboutTheEmployer}</p>
+                        </div>
+                        {/* Image 1*/}
+                        <div className="grid grid-cols-1 justify-items-center">
+                            <img className="sm:px-5 pt-5 pb-2 h-auto w-auto" src={experience.articleImg1} alt={experience.articleImg1Alt} />
+                            <p className="text-[var(--p5)] text-center font-light text-xs sm:text-sm">{experience.articleImg1Desc}</p>
+                        </div>
 
-                    {/* Work term Goals */}
-                    <div>
-                        <h2 className="text-3xl font-semibold m-4 text-center">Workterm Goals</h2>
-                        <WorkTermGoals goalType={experience.goalType1} goal={experience.goal1} goalActionPlan={experience.goalActionPlan1} goalReflection={experience.goalReflection1} nextGoal={experience.goal2}/>
-                        <WorkTermGoals goalType={experience.goalType2} goal={experience.goal2} goalActionPlan={experience.goalActionPlan2} goalReflection={experience.goalReflection2} nextGoal={experience.goal3}/>
-                        <WorkTermGoals goalType={experience.goalType3} goal={experience.goal3} goalActionPlan={experience.goalActionPlan3} goalReflection={experience.goalReflection3} nextGoal={experience.goal4}/>
-                        <WorkTermGoals goalType={experience.goalType4} goal={experience.goal4} goalActionPlan={experience.goalActionPlan4} goalReflection={experience.goalReflection4} nextGoal={experience.goal5}/>
-                        <WorkTermGoals goalType={experience.goalType5} goal={experience.goal5} goalActionPlan={experience.goalActionPlan5} goalReflection={experience.goalReflection5}/>
-                    </div>
+                        {/* Work term Goals */}
+                        <div>
+                            <h2 className="text-2xl md:text-3xl font-semibold m-4 text-center">Workterm Goals</h2>
+                            <WorkTermGoals goalType={experience.goalType1} goal={experience.goal1} goalActionPlan={experience.goalActionPlan1} goalReflection={experience.goalReflection1} nextGoal={experience.goal2}/>
+                            <WorkTermGoals goalType={experience.goalType2} goal={experience.goal2} goalActionPlan={experience.goalActionPlan2} goalReflection={experience.goalReflection2} nextGoal={experience.goal3}/>
+                            <WorkTermGoals goalType={experience.goalType3} goal={experience.goal3} goalActionPlan={experience.goalActionPlan3} goalReflection={experience.goalReflection3} nextGoal={experience.goal4}/>
+                            <WorkTermGoals goalType={experience.goalType4} goal={experience.goal4} goalActionPlan={experience.goalActionPlan4} goalReflection={experience.goalReflection4} nextGoal={experience.goal5}/>
+                            <WorkTermGoals goalType={experience.goalType5} goal={experience.goal5} goalActionPlan={experience.goalActionPlan5} goalReflection={experience.goalReflection5}/>
+                        </div>
 
-                    {/* Job Description */}
-                    <div>
-                        <h2 className="text-3xl font-semibold m-4 text-center">Job Description</h2>
-                        <p className="text-[var(--p4)]">{experience.jobDesctiption}</p>
+                        {/* Job Description */}
+                        <div>
+                            <h2 className="text-2xl md:text-3xl font-semibold m-4 text-center">Job Description</h2>
+                            <p className="text-[var(--p4)]">{experience.jobDesctiption}</p>
+                        </div>
+                        {/* Image 2 */}
+                        <div className="grid grid-cols-1 justify-items-center">
+                            <img className="sm:px-5 pt-5 pb-2 h-auto w-auto" src={experience.articleImg2} alt={experience.articleImg2Alt} />
+                            <p className="text-[var(--p5)] text-center font-light text-xs sm:text-sm">{experience.articleImg2Desc}</p>
+                        </div>
+                        {/* Conclusion */}
+                        <div>
+                            <h2 className="text-2xl md:text-3xl font-semibold m-4 text-center">Conclusion</h2>
+                            <p className="text-[var(--p2)]">{experience.conclusion}</p>
+                        </div>
+                        {/* Acknowledgements */}
+                        <div>
+                            <h2 className="text-2xl md:text-3xl font-semibold m-4 text-center">Acknowledgements</h2>
+                            <p className="text-[var(--p4)]">{experience.acknowledgements}</p>
+                        </div>
                     </div>
-                    {/* Image 2 */}
-                    <div className="grid grid-cols-1 justify-items-center">
-                        <img className="px-5 pt-5 pb-2 h-auto w-auto" src={experience.articleImg2} alt={experience.articleImg2Alt} />
-                        <p className="text-[var(--p5)] text-center font-light text-sm">{experience.articleImg2Desc}</p>
-                    </div>
-                    {/* Conclusion */}
-                    <div>
-                        <h2 className="text-3xl font-semibold m-4 text-center">Conclusion</h2>
-                        <p className="text-[var(--p2)]">{experience.conclusion}</p>
-                    </div>
-                    {/* Acknowledgements */}
-                    <div>
-                        <h2 className="text-3xl font-semibold m-4 text-center">Acknowledgements</h2>
-                        <p className="text-[var(--p4)]">{experience.acknowledgements}</p>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -113,7 +113,7 @@ function WorkTermGoals({goalType, goal, goalActionPlan, goalReflection, nextGoal
             <div className="my-4">
                 <span className="text-[var(--p2)] font-bold">{goalType}</span>
                 <span className="text-[var(--p3)]">{goal}</span>
-                <div className="px-15 py-5">
+                <div className=" px-7 sm:px-15 py-5">
                     <p className="text-[var(--p4)] pt-2"><i><b>Action Plan:</b></i> {goalActionPlan}</p>
                     <p className="text-[var(--p4)] pt-4"><i><b>Reflection:</b></i> {goalReflection}</p>
                 </div>
