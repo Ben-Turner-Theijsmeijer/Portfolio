@@ -3,7 +3,7 @@ import Link from "next/link";
 export const HeaderNav = () => {
  return (
     <header className="">
-        <div className="abosolute top-0 h-[40px] w-screen bg-[var(--nav-background)]"></div>
+        <div className="abosolute top-0 h-[40px] bg-[var(--nav-background)]"></div>
         <div className="header flex fixed top-0 z-10 justify-between w-full mx-auto bg-[var(--accent6)]/85">
             <div className="block justify-start pl-3">
                 <Link href="/" className="font-bold text-xl mx-3">
