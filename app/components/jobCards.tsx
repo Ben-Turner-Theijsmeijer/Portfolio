@@ -11,7 +11,7 @@ export const JobCards = () => {
             {coopWorkExperienceData.slice(0, 3).map((workExperience) => (
                 <div key={workExperience.slug} className="">
                     <Link href={`/experience/${workExperience.slug}`} className="relative w-[100%] flex justify-center group">
-                        <motion.div className="grid md:grid-cols-2 md:grid-rows-1 grid-rows-[auto_auto] m-[1vh] w-[90%] work-experience h-[330px] sm:h-[400px] md:h-[265px] bg-[var(--midground)] border-3 border-[var(--accent5)] ease-out duration-200 group-hover:bg-[var(--background)] group-hover:-translate-x-1 group-hover:-translate-y-1 z-6"
+                        <motion.div className="grid md:grid-cols-2 md:grid-rows-1 grid-rows-[auto_auto] m-2 w-[90%] work-experience h-[330px] sm:h-[400px] md:h-[265px] bg-[var(--midground)] border-3 border-[var(--accent5)] ease-out duration-200 group-hover:bg-[var(--background)] group-hover:-translate-x-1 group-hover:-translate-y-1 z-6"
                             whileTap={{ x: -10, y: -10 }}
                             transition={{duration: 0.2}}
                         >
@@ -30,7 +30,7 @@ export const JobCards = () => {
                                 </div>
                             </div>
                         </motion.div>
-                        <div className="absolute m-[1vh] w-[90%] h-[330px] sm:h-[400px] md:h-[265px] bg-[var(--accent5)] ease-out duration-200 group-hover:translate-x-2 group-hover:translate-y-2"/>
+                        <div className="absolute m-2 w-[90%] h-[330px] sm:h-[400px] md:h-[265px] bg-[var(--accent5)] ease-out duration-200 group-hover:translate-x-2 group-hover:translate-y-2"/>
                     </Link>
                 </div>
             ))}

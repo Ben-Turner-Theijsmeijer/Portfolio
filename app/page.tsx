@@ -154,7 +154,7 @@ export default function AboutMe() {
                 </div>
 
                 {/* Work Experience BG Divs */}
-                <motion.div className="absolute mt-25 p-10 w-[60%] min-w-[400px] sm:h-[400px] md:h-[1060px] bg-[var(--accent5)]"
+                <motion.div className="absolute mt-25 p-10 w-[60%] min-w-[400px] h-[1240px] sm:h-[1468px] md:h-[1060px] bg-[var(--accent5)]"
                     initial={{rotate: 0}}
                     whileInView={{rotate: 8}}
                     viewport={{ amount: 0.5 }}
@@ -164,7 +164,7 @@ export default function AboutMe() {
                         duration: 0.8,
                     }} 
                 />
-                <motion.div className="absolute mt-25 p-10 w-[60%] min-w-[400px] sm:h-[400px] md:h-[1060px] bg-[var(--accent4)]"
+                <motion.div className="absolute mt-25 p-10 w-[60%] min-w-[400px] h-[1240px] sm:h-[1468px] md:h-[1060px] bg-[var(--accent4)]"
                     initial={{rotate: 0}}
                     whileInView={{rotate: 4}}
                     viewport={{ amount: 0.5 }}
