@@ -30,19 +30,19 @@
     --foreground: #ededed;
     --nav-background: #e6e6e6;
     --nav-foreground: #161616;
-    --p0: #000000;
-    --p1: #1e2939;
-    --p2: #364153;
-    --p3: #4a5565;
+    --p0: #ffffff;
+    --p1: #bec1c4;
+    --p2: #8a94a3;
+    --p3: #7c8593;
     --p4: #6a7282;
-    --p5: #99a1af;
-    --accent: #ecc166;
-    --accent0: #FFA737;
-    --accent1: #674629;
-    --accent2: #69b578;
-    --accent3: #3A7D44;
-    --accent4: #254D32;
-    --accent5: #192e22;
+    --p5: #364153;
+    --accent: #e3ec66;
+    --accent0: #ffff37d6;
+    --accent1: #676029;
+    --accent2: #8c69b5;
+    --accent3: #583a7d;
+    --accent4: #40254d;
+    --accent5: #2b192e;
     --accent6: #181D27;
   }
 }
