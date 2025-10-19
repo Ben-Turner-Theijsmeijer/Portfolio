@@ -33,12 +33,12 @@ export default function Experiences() {
                             {workExperienceData.map((workExperience) => (
                             <li key={workExperience.slug} className="">
                                 <Link href={`/experience/${workExperience.slug}`} className="">
-                                    <motion.div className="border-b-10 border-r-10 border-[var(--accent4)] p-5 bg-[var(--accent3)] flex"
+                                    <motion.div className="border-r-20 border-l-10 border-[var(--accent4)] p-5 bg-[var(--accent3)] flex"
                                         whileHover={{ scale: 1.1 }}
                                         whileTap={{ scale: 0.9 }}
                                     >
                                         <div className=" max-w-40 p-1 mr-3">
-                                            <img src={workExperience.cardImg} alt="tesitng" />
+                                            <img src={workExperience.cardImg} alt={workExperience.cardImgAlt} />
                                         </div>
                                         <div>
                                             <h2 className="text-2xl font-semibold">{workExperience.company}</h2>

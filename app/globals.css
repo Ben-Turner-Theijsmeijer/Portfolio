@@ -13,8 +13,9 @@
   --p3: #4a5565;
   --p4: #6a7282;
   --p5: #99a1af;
-  --accent: #ea9c58;
-  --accent1: #674629;
+  --accent: #ecc166;
+  --accent0: #ea9c58;
+  --accent1: #673529;
   --accent2: #b9f8cf;
   --accent3: #6dc77b;
   --accent4: #2c6e42;
@@ -35,7 +36,8 @@
     --p3: #4a5565;
     --p4: #6a7282;
     --p5: #99a1af;
-    --accent: #FFA737;
+    --accent: #ecc166;
+    --accent0: #FFA737;
     --accent1: #674629;
     --accent2: #69b578;
     --accent3: #3A7D44;

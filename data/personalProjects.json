@@ -5,7 +5,9 @@
     "description": "An expanded upon open source project aiming to steamline task management.",
     "content": "This app was built by myself and a team of four other developers over the course of four months as a term long project in our capstone software design course. We expanded drastically on the original open source design, implemented many new features and improved accessability.",
     "projectLink": "https://ben-turner-theijsmeijer.github.io/To-Do-App/",
-    "img": "images/empty",
+    "cardImg": "images/To-Do_Header.png",
+    "cardImgAlt": "To Do list",
+    "img": "../images/To-Do_Main_Page.png",
     "imgAlt": "Sneak peak at the content of the To-Do App homepage."
 },
   {
@@ -14,6 +16,8 @@
     "description": "A Site cataloging some interesting and noteworthy events in earths history from our molten rock beggingings up to preset day",
     "content": "TEMP DATA - Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.",
     "projectLink": "https://ben-turner-theijsmeijer.github.io/Bygone_Eras/",
+    "cardImg": "images/CCS_Logo.avif",
+    "cardImgAlt": "TEMP",
     "img": "../images/Bygone_Eras.png",
     "imgAlt": "Sneak peak at the content of the Bygone Eras homepage."
 },
@@ -23,6 +27,8 @@
     "description": "A small indie game based around the idea of platfoming and exploiting funky ragdoll physics",
     "content": "TEMP DATA - Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.",
     "projectLink": "https://jrer.itch.io/ragroll",
+    "cardImg": "images/CCS_Logo.avif",
+    "cardImgAlt": "TEMP",
     "img": "NOT HERE",
     "imgAlt": "TEMP TEXT"
   }

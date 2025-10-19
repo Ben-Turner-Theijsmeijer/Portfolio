@@ -1,6 +1,7 @@
 import Link from "next/link";
 import projectData from "@/data/personalProjects.json";
 import { ComingSoon } from "../components/comingSoon";
+import * as motion from "motion/react-client"
 
 export default function Projects() {
     return (
@@ -10,15 +11,24 @@ export default function Projects() {
                     <h1 className="text-[var(--p0)] text-4xl font-bold mb-6">My Projects</h1>
                     <ul className="space-y-4">
                         {projectData.map((project) => (
-                        <li key={project.slug} className="border-b pb-2">
-                            <Link href={`/projects/${project.slug}`} className="text-[var(--accent4)] text-2xl hover:underline">
-                            {project.title}
+                        <li key={project.slug} className="">
+                            <Link href={`/projects/${project.slug}`} className="">
+                            <motion.div className="border-r-20 border-l-10 border-[var(--accent1)] p-5 bg-[var(--accent0)] flex"
+                                whileHover={{ scale: 1.1 }}
+                                whileTap={{ scale: 0.9 }}
+                            >
+                                <div className=" max-w-30 p-1 mr-3">
+                                    <img src={project.cardImg} alt={project.cardImgAlt} />
+                                </div>
+                                <div>
+                                    {project.title}
+                                    <p className="text-[var(--p3)]">{project.description}</p>
+                                </div>
+                            </motion.div>
                             </Link>
-                            <p className="text-[var(--p3)]">{project.description}</p>
                         </li>
                         ))}
                     </ul>
-                    <ComingSoon />
                 </div>
             </div>
         </div>

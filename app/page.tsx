@@ -107,15 +107,15 @@ export default function AboutMe() {
                                 delay: 0,
                             }}  >
                             <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent1)] mask-conic-from-40% mask-conic-to-40% rotate-[-50deg] translate-y-[2%] translate-x-[2%]"/>
-                            <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent)] mask-conic-from-40% mask-conic-to-40% rotate-[-50deg]"/>
+                            <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent0)] mask-conic-from-40% mask-conic-to-40% rotate-[-50deg]"/>
                             <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent1)] mask-conic-from-10% mask-conic-to-10% rotate-[105deg] translate-y-[2%] translate-x-[2%]"/>
-                            <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent)] mask-conic-from-10% mask-conic-to-10% rotate-[105deg]"/>
+                            <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent0)] mask-conic-from-10% mask-conic-to-10% rotate-[105deg]"/>
                             <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent1)] mask-conic-from-5% mask-conic-to-5% rotate-[152deg] translate-y-[2%] translate-x-[2%]"/>
-                            <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent)] mask-conic-from-5% mask-conic-to-5% rotate-[152deg]"/>
+                            <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent0)] mask-conic-from-5% mask-conic-to-5% rotate-[152deg]"/>
                             <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent1)] mask-conic-from-2% mask-conic-to-2% rotate-[177deg] translate-y-[2%] translate-x-[2%]"/>
-                            <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent)] mask-conic-from-2% mask-conic-to-2% rotate-[177deg]"/>
+                            <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent0)] mask-conic-from-2% mask-conic-to-2% rotate-[177deg]"/>
                             <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent1)] mask-conic-from-2% mask-conic-to-2% rotate-[190deg] translate-y-[2%] translate-x-[2%]"/>
-                            <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent)] mask-conic-from-2% mask-conic-to-2% rotate-[190deg]"/>
+                            <div className="absolute size-80 md:size-90 rounded-full border-15 border-[var(--accent0)] mask-conic-from-2% mask-conic-to-2% rotate-[190deg]"/>
                     </motion.div>
 
                     {/* Portrait Section */}

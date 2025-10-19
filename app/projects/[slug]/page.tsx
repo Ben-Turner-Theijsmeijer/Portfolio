@@ -23,24 +23,24 @@ export default function ProjectPage({ params }: { params: Promise<{ slug: string
             <div className="w-full max-w-[1600px] mx-auto whitespace-pre-line grid grid-cols-1 justify-items-center">
                 {/* breadcrumb trail */}
                 <div className="w-[70%] flex mt-10">
-                    <div className="bg-[var(--accent5)] px-2 text-[var(--nav-foreground)]">
+                    <div className="bg-[var(--accent1)] px-2 text-[var(--nav-foreground)]">
                         <Link href="/">
                             Home
                         </Link>
                     </div>
-                    <div className="bg-[var(--accent4)] border-t-10 border-t-transparent border-b-10 border-b-transparent border-l-10 border-l-[var(--accent5)]"></div>
-                    <div className="bg-[var(--accent4)] px-2 text-[var(--nav-foreground)]">
+                    <div className="bg-[var(--accent0)] border-t-10 border-t-transparent border-b-10 border-b-transparent border-l-10 border-l-[var(--accent1)]"></div>
+                    <div className="bg-[var(--accent0)] px-2 text-[var(--nav-background)]">
                         <Link href="/projects">
                             Projects
                         </Link>
                     </div>
-                    <div className="bg-[var(--accent3)] border-t-10 border-t-transparent border-b-10 border-b-transparent border-l-10 border-l-[var(--accent4)]"></div>
-                    <div className="bg-[var(--accent3)] px-2">
+                    <div className="bg-[var(--accent)] border-t-10 border-t-transparent border-b-10 border-b-transparent border-l-10 border-l-[var(--accent0)]"></div>
+                    <div className="bg-[var(--accent)] px-2">
                         <Link href={project.slug}>
                             {project.title}
                         </Link>
                     </div>
-                    <div className="border-t-10 border-t-transparent border-b-10 border-b-transparent border-l-10 border-l-[var(--accent3)]"></div>
+                    <div className="border-t-10 border-t-transparent border-b-10 border-b-transparent border-l-10 border-l-[var(--accent)]"></div>
                 </div>
                 <div className="py-25 lg:px-15 xl:px-25 w-[70%] p-8 overflow-hidden">
                     <h1 className="text-[var(--p0)] text-4xl font-bold mb-4">{project.title}</h1>

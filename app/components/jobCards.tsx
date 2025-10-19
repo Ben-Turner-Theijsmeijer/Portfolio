@@ -21,7 +21,7 @@ export const JobCards = () => {
                             </div>  
                             {/* Description */}
                             <div className="relative py-0 px-5 md:p-5 overflow-hidden">
-                                <div className="absolute max-md:hidden top-1/2 left-1 -translate-x-1/2 -translate-y-1/2 h-[50%] w-px bg-linear-to-b group-hover:from-[var(--background)] from-[var(--midground)] via-[var(--accent)] group-hover:to-[var(--background)] to-[var(--midground)] z-10" />
+                                <div className="absolute max-md:hidden top-1/2 left-1 -translate-x-1/2 -translate-y-1/2 h-[50%] w-px bg-linear-to-b group-hover:from-[var(--background)] from-[var(--midground)] via-[var(--accent0)] group-hover:to-[var(--background)] to-[var(--midground)] z-10" />
                                 <h2 className="text-[var(--accent6)] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-shadow-sm">{workExperience.company}</h2>
                                 <h3 className="text-[var(--p2)] text-base sm:text-lg text-shadow-xs">{workExperience.jobTitle}</h3>
                                 <div className="max-md:text-right overflow-y-auto h-[70%] pr-2">
