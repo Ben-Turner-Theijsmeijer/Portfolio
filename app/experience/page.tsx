@@ -1,13 +1,11 @@
-import { ComingSoon } from "./../components/comingSoon";
 import Link from "next/link";
 import workExperienceData from "@/data/coopWorkExperience.json";
 import * as motion from "motion/react-client"
 
-
 export default function Experiences() {
     return (
         <div>
-            <div className="w-full max-w-[1600px] mx-auto grid grid-cols-1 justify-items-center">
+            <div className="w-full max-w-[1600px] mx-auto grid grid-cols-1 justify-items-center overflow-hidden">
                 <div className="py-25 lg:px-15 xl:px-25 w-[70%] p-8 overflow-hidden">
                     {/* Full & Part Time Experience */}
                     <div>
@@ -52,7 +50,63 @@ export default function Experiences() {
                         </ul>
                     </div>
                 </div>
+
+                <div className="md:w-2/5 flex justify-center mt-8 md:mt-0 relative">
+                    {/* Stripe section */}
+                    <div className="Stripe absolute inset-0 flex justify-center items-center -z-10">
+                        <motion.div className="absolute rotate-[260deg] bg-[var(--accent1)] h-500 w-1/15 translate-y-[-30.5%]"
+                            variants={stripeVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{
+                                duration: 0.8,
+                                type: "spring",
+                                stiffness: 100,
+                                damping: 10,
+                                delay: 0.4,
+                            }} />
+                        <motion.div className="absolute rotate-[260deg] bg-[var(--accent0)] h-500 w-1/15 translate-y-[-31%]"
+                            variants={stripeVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{
+                                duration: 0.8,
+                                type: "spring",
+                                stiffness: 100,
+                                damping: 10,
+                                delay: 0.4,
+                            }} />
+
+                        <motion.div className="absolute rotate-[260deg] bg-[var(--accent1)] h-500 w-2/5 translate-y-[-15%]"
+                            variants={stripeVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{
+                                duration: 0.8,
+                                type: "spring",
+                                stiffness: 80,
+                                damping: 10,
+                                delay: 0.4,
+                            }}  />
+                        <motion.div className="absolute rotate-[260deg] bg-[var(--accent0)] h-500 w-2/5 translate-y-[-17%]"
+                            variants={stripeVariants}
+                            initial="hidden"
+                            animate="visible"
+                            transition={{
+                                duration: 0.8,
+                                type: "spring",
+                                stiffness: 80,
+                                damping: 10,
+                                delay: 0.4,
+                            }}  />
+                    </div>
+                </div>
             </div>
         </div>
     );
 }
+
+const stripeVariants = {
+    hidden: { opacity: 0, x: 100 },
+    visible: { opacity: 1, x: 0 },
+};
