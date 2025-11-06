@@ -48,11 +48,11 @@ export default function ProjectPage({ params }: { params: Promise<{ slug: string
 
                     <div className="my-2 sm:my-5 py-10 md:py-25 p-6 sm:p-8 lg:px-10 xl:px-15 w-[99%] sm:w-[97%] md:w-[95%] overflow-hidden border-[var(--accent0)] border-2">
                         <h1 className="text-[var(--p0)] text-4xl font-bold mb-4">{project.title}</h1>
-                        
+
                         <ProgrammingLanguages languages = {project.languages}/>
 
                         <div className="p-2">
-                            <p className="font-bold text-[var(--p2)] py-2">{project.description}</p>
+                            <p className="font-bold text-[var(--p2)] py-4">{project.description}</p>
                             <p className="text-[var(--p2)]">{project.introduction}</p>
                         </div>
                         
@@ -80,6 +80,9 @@ export default function ProjectPage({ params }: { params: Promise<{ slug: string
                         </div>
 
                         <img className="sm:mx-2 mt-5 mb-2 h-auto w-auto border-2 border-[var(--accent1)]" src={project.img1} alt={project.imgAlt1} />
+                        <div className="p-2">
+                            <p className="text-[var(--p2)]">{project.content1}</p>
+                        </div>
                         <img className="sm:mx-2 mt-5 mb-2 h-auto w-auto border-2 border-[var(--accent1)]" src={project.img2} alt={project.imgAlt2} />
                         <img className="sm:mx-2 mt-5 mb-2 h-auto w-auto border-2 border-[var(--accent1)]" src={project.img3} alt={project.imgAlt3} />
                         <img className="sm:mx-2 mt-5 mb-2 h-auto w-auto border-2 border-[var(--accent1)]" src={project.img4} alt={project.imgAlt4} />
