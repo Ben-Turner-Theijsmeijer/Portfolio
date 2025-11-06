@@ -104,9 +104,9 @@ function ProgrammingLanguages({languages}: {languages?:string}) {
     )
     return (
         <>
-        <div className="flex border-2 w-[50%] p-2 bg-[var(--background)]">
-            <h2 className="text-2xl font-bold">Built Using:</h2>
-            <ul className="pl-10 flex text-[var(--p3)] items-center list-disc list-inside font-light text-sm">
+        <h2 className="text-xl font-semibold">Built Using:</h2>
+        <div className="inline-block border-2 p-2 bg-[var(--background)]">
+            <ul className="flex text-[var(--p3)] items-center list-disc list-inside font-light text-sm">
                 {languagesList}
             </ul>
         </div>

@@ -12,11 +12,8 @@ export default function Experiences() {
                         <h1 className="text-[var(--p0)] text-4xl font-bold mb-6">Work Experiences</h1>
                         <ul className="space-y-4 my-10">
                             <li>
-                                <div className="border-4 flex p-5">
-                                    <div className="bg-[var(--accent5)]">
-
-                                    </div>
-                                    <div>
+                                <div className="border-4 p-5 grid grid-cols-1 justify-items-center">
+                                    <div className="">
                                         <h2>WORK IN PROGRESS</h2>
                                     </div>
 
